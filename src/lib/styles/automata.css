@@ -1,0 +1,18 @@
+/* Stylesheet: automata.css */
+
+/* Tailwind Directives */
+@import 'partials/tailwind.css';
+
+/* ----- Custom Stylesheets ----- */
+
+/* Core */
+@import 'partials/core.css';
+
+/* Typography */
+@import 'partials/typography.css';
+
+/* Tailwind Elements */
+@import 'partials/elements.css';
+
+/* Variants */
+@import 'partials/variants.css';

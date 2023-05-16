@@ -1,3 +1,6 @@
+/* Stylesheet: tailwind.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;

@@ -1,0 +1,64 @@
+/* Stylesheet: core.css */
+
+@layer base {
+  /* ----- Body ----- */
+
+  body {
+    // @apply bg-surface-50-900-token;
+  }
+
+  /* ----- Selection ----- */
+
+  ::selection {
+    // @apply bg-primary-500/30;
+  }
+
+  /* ----- Focus ----- */
+
+  /* Outline */
+  /* DO NOT MODIFY FOR ACCESSIBILITY */
+  /* See: http://www.outlinenone.com/ */
+
+  /* Mobile Tap Highlight */
+  html {
+    -webkit-tap-highlight-color: rgba(128, 128, 128, 0.5);
+  }
+
+  /* ----- Scrollbar ----- */
+
+  ::-webkit-scrollbar {
+    @apply h-2 w-2;
+  }
+  ::-webkit-scrollbar-track {
+    // @apply !bg-surface-50-900-token px-[1px];
+  }
+  ::-webkit-scrollbar-thumb {
+    // @apply rounded-token bg-surface-400-500-token;
+  }
+
+  /* Firefox */
+  html {
+    scrollbar-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.05);
+  }
+  html.dark {
+    scrollbar-color: rgba(255, 255, 255, 0.1) rgba(0, 0, 0, 0.05);
+  }
+
+  /* Hide Scrollbars */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* ----- hr ----- */
+
+  hr:not(.divider) {
+    // @apply border-surface-300-600-token block border-t border-solid;
+  }
+  .divider-vertical {
+    // @apply border-surface-300-600-token mx-auto inline-block min-h-[10px] border-l border-solid;
+  }
+}

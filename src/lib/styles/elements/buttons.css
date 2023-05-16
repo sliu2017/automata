@@ -1,0 +1,25 @@
+/* Stylesheet: buttons.css */
+
+@layer components {
+  /* ----- Button States ----- */
+
+  .button-base-styles {
+    /* Size */
+    @apply text-base;
+    /* Padding */
+    @apply px-4 py-2;
+    /* Core */
+    @apply whitespace-nowrap text-center;
+    /* Flex Columns */
+    @apply inline-flex items-center justify-center space-x-2;
+    /* States */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  /* ----- Button ----- */
+  .btn {
+    @apply button-base-styles;
+  }
+}
