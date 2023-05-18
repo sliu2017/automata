@@ -26,6 +26,12 @@ module.exports = {
         parser: '@typescript-eslint/parser',
       },
     },
+    {
+      files: ['*.js', '*.cjs'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
   ],
   rules: {
     'array-callback-return': 'error',
