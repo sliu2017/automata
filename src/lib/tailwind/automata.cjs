@@ -1,6 +1,6 @@
 /* Automata Tailwind Plugin */
 
-import * as corePlugin from './core.cjs'
+const corePlugin = require('./core.cjs')
 
 module.exports = {
   plugins: [corePlugin],

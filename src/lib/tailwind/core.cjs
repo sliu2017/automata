@@ -1,17 +1,17 @@
 /* Automata Core Tailwind Plugin */
 
-import * as plugin from 'tailwindcss/plugin'
+const plugin = require('tailwindcss/plugin')
 
 /* Theme Modules */
-import * as themeColors from './theme/colors.cjs'
+const themeColors = require('./theme/colors')
 
 /* Token Modules */
-import * as tokensBackgrounds from './tokens/backgrounds.cjs'
-import * as tokensBorders from './tokens/borders.cjs'
-import * as tokensBorderRadius from './tokens/border-radius.cjs'
-import * as tokensFills from './tokens/fills.cjs'
-import * as tokensText from './tokens/text.cjs'
-import * as tokensRings from './tokens/rings.cjs'
+const tokensBackgrounds = require('./tokens/backgrounds')
+const tokensBorders = require('./tokens/borders')
+const tokensBorderRadius = require('./tokens/border-radius')
+const tokensFills = require('./tokens/svg-fills')
+const tokensText = require('./tokens/text')
+const tokensRings = require('./tokens/rings')
 
 module.exports = plugin(
   ({addUtilities}) => {
