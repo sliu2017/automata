@@ -7,21 +7,21 @@ const themeColors = require('./theme/colors')
 
 /* Token Modules */
 const tokensBackgrounds = require('./tokens/backgrounds')
-const tokensBorders = require('./tokens/borders')
 const tokensBorderRadius = require('./tokens/border-radius')
-const tokensFills = require('./tokens/svg-fills')
-const tokensText = require('./tokens/text')
+const tokensBorders = require('./tokens/borders')
 const tokensRings = require('./tokens/rings')
+const tokensSVGFills = require('./tokens/svg-fills')
+const tokensText = require('./tokens/text')
 
 module.exports = plugin(
   ({addUtilities}) => {
     addUtilities({
       ...tokensBackgrounds(),
-      ...tokensBorders(),
       ...tokensBorderRadius(),
-      ...tokensFills(),
-      ...tokensText(),
+      ...tokensBorders(),
       ...tokensRings(),
+      ...tokensSVGFills(),
+      ...tokensText(),
     })
   },
   {
