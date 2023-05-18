@@ -1,6 +1,6 @@
 /* Generate Colors */
 
-const settings = require('../settings.cjs')
+const settings = require('../settings')
 
 const generateColorShades = (colorName) => {
   const colorShades = {}

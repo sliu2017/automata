@@ -7,7 +7,6 @@ const themeColors = require('./theme/colors')
 
 /* Token Modules */
 const tokensBackgrounds = require('./tokens/backgrounds')
-const tokensBorderRadius = require('./tokens/border-radius')
 const tokensBorders = require('./tokens/borders')
 const tokensRings = require('./tokens/rings')
 const tokensSVGFills = require('./tokens/svg-fills')
@@ -17,7 +16,6 @@ module.exports = plugin(
   ({addUtilities}) => {
     addUtilities({
       ...tokensBackgrounds(),
-      ...tokensBorderRadius(),
       ...tokensBorders(),
       ...tokensRings(),
       ...tokensSVGFills(),
