@@ -16,7 +16,7 @@ const activeAlpha = 0.4
 module.exports = () => {
   const backgroundClasses = {}
 
-  /* Generate background tokens for each color */
+  /* Generate background color tokens */
   settings.colorNames.forEach((colorName) => {
     // eslint-disable-next-line lines-around-comment
     /* Backdrops */
@@ -51,7 +51,7 @@ module.exports = () => {
     })
   })
 
-  /* Generate background tokens for each alert color */
+  /* Generate background color tokens for alert colors */
   settings.alertColorNames.forEach((alertColorName) => {
     // eslint-disable-next-line lines-around-comment
     /* Backdrops */

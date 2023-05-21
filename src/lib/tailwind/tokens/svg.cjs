@@ -21,7 +21,13 @@ module.exports = () => {
   /* Alert SVG Fill Colors */
   settings.alertColorNames.forEach((alertColorName) => {
     // eslint-disable-next-line lines-around-comment
+    /* Alert color fill */
     svgClasses[`.fill-${alertColorName}-token`] = {
+      fill: `rgb(var(--color-${alertColorName}))`,
+    }
+
+    /* Fill on alert color background */
+    svgClasses[`.fill-on-${alertColorName}-token`] = {
       fill: `rgb(var(--on-${alertColorName}))`,
     }
   })
