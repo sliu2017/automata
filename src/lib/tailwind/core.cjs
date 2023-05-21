@@ -6,20 +6,24 @@ const plugin = require('tailwindcss/plugin')
 const themeColors = require('./theme/colors')
 
 /* Token Modules */
-const tokensBackgrounds = require('./tokens/backgrounds')
-const tokensBorders = require('./tokens/borders')
-const tokensRings = require('./tokens/rings')
-const tokensSVGFills = require('./tokens/svg-fills')
-const tokensText = require('./tokens/text')
+const backgroundTokens = require('./tokens/backgrounds')
+const borderTokens = require('./tokens/borders')
+const effectTokens = require('./tokens/effects')
+const interactivityTokens = require('./tokens/interactivity')
+const svgTokens = require('./tokens/svg')
+const transitionTokens = require('./tokens/transitions')
+const typographyTokens = require('./tokens/typography')
 
 module.exports = plugin(
   ({addUtilities}) => {
     addUtilities({
-      ...tokensBackgrounds(),
-      ...tokensBorders(),
-      ...tokensRings(),
-      ...tokensSVGFills(),
-      ...tokensText(),
+      ...backgroundTokens(),
+      ...borderTokens(),
+      ...effectTokens(),
+      ...interactivityTokens(),
+      ...svgTokens(),
+      ...transitionTokens(),
+      ...typographyTokens(),
     })
   },
   {
