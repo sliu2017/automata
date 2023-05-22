@@ -82,10 +82,12 @@ module.exports = () => {
     },
   }
 
-  /* Border Color */
+  /* Border, Divide, Outline, Ring, and Ring Offset Colors */
   settings.colorNames.forEach((colorName) => {
     settings.colorPairings.forEach((colorPairing) => {
       // eslint-disable-next-line lines-around-comment
+      /* ----- Border ----- */
+
       /* All Sides */
       borderClasses[`.border-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
         'border-color': `rgb(var(--color-${colorName}-${colorPairing.light}))`,
@@ -148,12 +150,62 @@ module.exports = () => {
         'border-top-color': `rgb(var(--color-${colorName}-${colorPairing.dark}))`,
         'border-bottom-color': `rgb(var(--color-${colorName}-${colorPairing.dark}))`,
       }
+
+      /* ----- Divide ----- */
+
+      borderClasses[`.divide-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
+        '--tw-divide-opacity': 1,
+        // eslint-disable-next-line max-len
+        'border-color': `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-divide-opacity))`,
+      }
+      borderClasses[`.dark .divide-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] =
+        {
+          '--tw-divide-opacity': 1,
+          // eslint-disable-next-line max-len
+          'border-color': `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-divide-opacity))`,
+        }
+
+      /* ----- Outline ----- */
+
+      borderClasses[`.outline-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
+        'outline-color': `rgb(var(--color-${colorName}-${colorPairing.light}))`,
+      }
+      borderClasses[
+        `.dark .outline-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`
+      ] = {'outline-color': `rgb(var(--color-${colorName}-${colorPairing.dark}))`}
+
+      /* ----- Ring ----- */
+
+      borderClasses[`.ring-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
+        '--tw-ring-opacity': 1,
+        // eslint-disable-next-line max-len
+        '--tw-ring-color': `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-ring-opacity))`,
+      }
+      borderClasses[`.dark .ring-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
+        '--tw-ring-opacity': 1,
+        // eslint-disable-next-line max-len
+        '--tw-ring-color': `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-ring-opacity))`,
+      }
+
+      /* ----- Ring Offset ----- */
+
+      borderClasses[`.ring-offset-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] =
+        {
+          '--tw-ring-offset-color': `rgb(var(--color-${colorName}-${colorPairing.light}))`,
+        }
+      borderClasses[
+        `.dark .ring-offset-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`
+      ] = {
+        '--tw-ring-offset-color': `rgb(var(--color-${colorName}-${colorPairing.dark}))`,
+      }
     })
   })
 
-  /* Alert Border Color */
+  /* Alert Border, Divide, Outline, Ring, and Ring Offset Colors */
   settings.alertColorNames.forEach((alertColorName) => {
     // eslint-disable-next-line lines-around-comment
+    /* ----- Border ----- */
+
     /* All Sides */
     borderClasses[`.border-${alertColorName}-token`] = {
       'border-color': `rgb(var(--color-${alertColorName}))`,
@@ -189,6 +241,32 @@ module.exports = () => {
     borderClasses[`.border-y-${alertColorName}-token`] = {
       'border-top-color': `rgb(var(--color-${alertColorName}))`,
       'border-bottom-color': `rgb(var(--color-${alertColorName}))`,
+    }
+
+    /* ----- Divide ----- */
+
+    borderClasses[`.divide-${alertColorName}-token`] = {
+      '--tw-divide-opacity': 1,
+      'border-color': `rgb(var(--color-${alertColorName})/var(--tw-divide-opacity))`,
+    }
+
+    /* ----- Outline ----- */
+
+    borderClasses[`.outline-${alertColorName}-token`] = {
+      'outline-color': `rgb(var(--color-${alertColorName}))`,
+    }
+
+    /* ----- Ring ----- */
+
+    borderClasses[`.ring-${alertColorName}-token`] = {
+      '--tw-ring-opacity': 1,
+      '--tw-ring-color': `rgb(var(--color-${alertColorName})/var(--tw-ring-opacity))`,
+    }
+
+    /* ----- Ring Offset ----- */
+
+    borderClasses[`.ring-offset-${alertColorName}-token`] = {
+      '--tw-ring-offset-color': `rgb(var(--color-${alertColorName}))`,
     }
   })
 
