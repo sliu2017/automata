@@ -3,7 +3,20 @@
 const settings = require('../settings')
 
 module.exports = () => {
-  const borderClasses = {}
+  const borderClasses = {
+    // eslint-disable-next-line lines-around-comment
+    /* Border Style */
+    '.border-token': {'border-style': 'var(--border-style)'},
+    '.border-container-token': {'border-style': 'var(--border-style-container)'},
+
+    /* Divide Style */
+    '.divide-token': {'border-style': 'var(--divide-style)'},
+    '.divide-container-token': {'border-style': 'var(--divide-style-container)'},
+
+    /* Outline Style */
+    '.outline-token': {'outline-style': 'var(--outline-style)'},
+    '.outline-container-token': {'outline-style': 'var(--outline-style-container)'},
+  }
 
   /* Border, Divide, Outline, Ring, and Ring Offset Colors */
   settings.colorNames.forEach((colorName) => {
