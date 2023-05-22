@@ -14,7 +14,6 @@ const borderTokens = require('./tokens/borders')
 const effectTokens = require('./tokens/effects')
 const interactivityTokens = require('./tokens/interactivity')
 const svgTokens = require('./tokens/svg')
-const transitionTokens = require('./tokens/transitions')
 const typographyTokens = require('./tokens/typography')
 
 module.exports = plugin(
@@ -25,7 +24,6 @@ module.exports = plugin(
       ...effectTokens(),
       ...interactivityTokens(),
       ...svgTokens(),
-      ...transitionTokens(),
       ...typographyTokens(),
     })
   },
