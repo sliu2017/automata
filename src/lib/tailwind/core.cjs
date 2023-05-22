@@ -6,6 +6,7 @@ const plugin = require('tailwindcss/plugin')
 const colorsTheme = require('./theme/colors')
 const sizesTheme = require('./theme/sizes')
 const sizesExtendedTheme = require('./theme/sizes-extended')
+const timesExtendedTheme = require('./theme/times-extended')
 
 /* Token Modules */
 const backgroundTokens = require('./tokens/backgrounds')
@@ -33,6 +34,7 @@ module.exports = plugin(
       extend: {
         colors: colorsTheme(),
         ...sizesExtendedTheme(),
+        ...timesExtendedTheme(),
       },
       ...sizesTheme(),
     },
