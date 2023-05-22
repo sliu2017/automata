@@ -3,7 +3,16 @@
 const settings = require('../settings')
 
 module.exports = () => {
-  const typographyClasses = {}
+  const typographyClasses = {
+    // eslint-disable-next-line lines-around-comment
+    /* Font Family */
+    '.font-token': {'font-family': 'var(--font-family)'},
+    '.font-heading-token': {'font-family': 'var(--font-family-heading)'},
+
+    /* Text Transform */
+    '.text-transform-token': {'text-transform': 'var(--text-transform)'},
+    '.text-transform-heading-token': {'text-transform': 'var(--text-transform-heading)'},
+  }
 
   /* Typography Colors */
   settings.colorNames.forEach((colorName) => {
