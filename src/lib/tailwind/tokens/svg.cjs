@@ -30,19 +30,10 @@ module.exports = () => {
   /* Alert SVG Fill and Stroke Colors */
   settings.alertColorNames.forEach((alertColorName) => {
     // eslint-disable-next-line lines-around-comment
-    /* SVG Fill Alert Colors */
-    svgClasses[`.fill-${alertColorName}-token`] = {
-      fill: `rgb(var(--color-${alertColorName}))`,
-    }
 
     /* SVG Fill Color on Alert Color Background */
     svgClasses[`.fill-on-${alertColorName}-token`] = {
       fill: `rgb(var(--on-${alertColorName}))`,
-    }
-
-    /* SVG Stroke Alert Colors */
-    svgClasses[`.stroke-${alertColorName}-token`] = {
-      stroke: `rgb(var(--color-${alertColorName}))`,
     }
 
     /* SVG Stroke Color on Alert Color Background */
