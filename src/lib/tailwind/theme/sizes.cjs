@@ -15,5 +15,11 @@ module.exports = () => {
     container: 'var(--border-container)',
   }
 
+  /* Divide Width */
+  sizes.divideWidth = {
+    base: 'var(--divide)',
+    container: 'var(--divide-container)',
+  }
+
   return sizes
 }
