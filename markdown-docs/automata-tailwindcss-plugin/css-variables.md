@@ -2,6 +2,43 @@
 
 The Automata Tailwind CSS Plugin relies on a set of CSS Custom Properties (or CSS Variables) that developers should specify values for. Configuring these CSS Variables allows the plugin to produce its Design Tokens and Theme Extensions.
 
+**Table of Contents**
+
+- [Typograhy](#typography)
+  - [Font Family](#font-family)
+  - [Font Weight](#font-weight)
+  - [Letter Spacing](#letter-spacing)
+  - [Line Height](#line-height)
+  - [Text Decoration Thickness](#text-decoration-thickness)
+  - [Text Underline Offset](#text-underline-offset)
+  - [Text Transform](#text-transform)
+  - [Text Indent](#text-indent)
+- [SVG](#svg)
+  - [Stroke Width](#stroke-width)
+- [Borders](#borders)
+  - [Border Radius](#border-radius)
+  - [Border Width](#border-width)
+  - [Border Style](#border-style)
+  - [Divide Width](#divide-width)
+  - [Divide Style](#divide-style)
+  - [Outline Width](#outline-width)
+  - [Outline Style](#outline-style)
+  - [Outline Offset](#outline-offset)
+  - [Ring Width](#ring-width)
+  - [Ring Offset Width](#ring-offset-width)
+- [Effects](#effects)
+  - [Box Shadow](#box-shadow)
+- [Transitions & Animation](#transitions--animation)
+  - [Transition Duration](#transition-duration)
+  - [Transition Delay](#transition-delay)
+- [Colors](#colors)
+  - [Color Palette](#color-palette)
+    - [Primary](#primary)
+    - [Secondary](#secondary)
+    - [Tertiary](#tertiary)
+  - [Alert Colors](#alert-colors)
+  - ["On" Colors](#on-colors)
+
 ## Typography
 
 ### Font Family
