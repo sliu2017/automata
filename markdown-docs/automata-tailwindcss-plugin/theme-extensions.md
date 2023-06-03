@@ -2,7 +2,7 @@
 
 Theme Extensions (as the name implies) extend various Tailwind CSS classes in order to provide convenience in addition to utility when implementing theme settings.
 
-**Table of Contents**
+## Table of Contents
 
 - [Typograhy](#typography)
   - [Font Weight](#font-weight)
@@ -16,11 +16,8 @@ Theme Extensions (as the name implies) extend various Tailwind CSS classes in or
 - [Borders](#borders)
   - [Border Radius](#border-radius)
   - [Border Width](#border-width)
-  - [Border Style](#border-style)
   - [Divide Width](#divide-width)
-  - [Divide Style](#divide-style)
   - [Outline Width](#outline-width)
-  - [Outline Style](#outline-style)
   - [Outline Offset](#outline-offset)
   - [Ring Width](#ring-width)
   - [Ring Offset Width](#ring-offset-width)
@@ -222,7 +219,7 @@ Like the default color palette, these colors come with eleven shades:
 - 900
 - 950
 
-**Class Examples**
+#### Color Palette Examples
 
 ```text
 bg-primary-50
@@ -243,7 +240,7 @@ The following alert colors are available to use:
 
 Unlike colors in the color palette, alert colors do not come with shades.
 
-**Class Examples**
+#### Alert Color Examples
 
 ```text
 bg-success

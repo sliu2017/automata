@@ -2,7 +2,7 @@
 
 The Automata Tailwind CSS Plugin relies on a set of CSS Custom Properties (or CSS Variables) that developers should specify values for. Configuring these CSS Variables allows the plugin to produce its Design Tokens and Theme Extensions.
 
-**Table of Contents**
+## Table of Contents
 
 - [Typograhy](#typography)
   - [Font Family](#font-family)
