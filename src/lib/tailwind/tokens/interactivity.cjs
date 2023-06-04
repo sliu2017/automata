@@ -26,5 +26,20 @@ module.exports = () => {
     })
   })
 
+  /* Alert Interactivity Colors */
+  settings.alertColorNames.forEach((alertColorName) => {
+    // eslint-disable-next-line lines-around-comment
+
+    /* Accent Colors on Alert Color Background */
+    interactivityClasses[`.accent-on-${alertColorName}-token`] = {
+      'accent-color': `rgb(var(--on-${alertColorName}))`,
+    }
+
+    /* Caret Colors on Alert Color Background */
+    interactivityClasses[`.caret-on-${alertColorName}-token`] = {
+      'caret-color': `rgb(var(--on-${alertColorName}))`,
+    }
+  })
+
   return interactivityClasses
 }
