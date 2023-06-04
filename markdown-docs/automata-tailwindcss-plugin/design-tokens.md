@@ -170,6 +170,8 @@ stroke-on-info-token
 
 ### Border Color
 
+#### Color Palette
+
 Swaps between specified color shades on light/dark mode change.
 
 ```text
@@ -180,6 +182,18 @@ border-x-tertiary-200-800-token
 border-y-primary-950-50-token
 border-r-secondary-900-100-token
 border-tertiary-800-200-token
+```
+
+#### Alert Colors
+
+Use with borders on backgrounds set as an alert color.
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+border-on-success-token
+border-t-on-warning-token
+border-r-on-error-token
+border-x-on-info-token
 ```
 
 ### Border Style
@@ -193,6 +207,8 @@ border-container-token
 
 ### Divide Color
 
+#### Color Palette
+
 Swaps between specified color shades on light/dark mode change.
 
 ```text
@@ -203,6 +219,18 @@ divide-tertiary-200-800-token
 divide-primary-950-50-token
 divide-secondary-900-100-token
 divide-tertiary-800-200-token
+```
+
+#### Alert Colors
+
+Use with divides on backgrounds set as an alert color.
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+divide-on-success-token
+divide-on-warning-token
+divide-on-error-token
+divide-on-info-token
 ```
 
 ### Divide Style
@@ -216,6 +244,8 @@ divide-container-token
 
 ### Outline Color
 
+#### Color Palette
+
 Swaps between specified color shades on light/dark mode change.
 
 ```text
@@ -226,6 +256,18 @@ outline-tertiary-200-800-token
 outline-primary-950-50-token
 outline-secondary-900-100-token
 outline-tertiary-800-200-token
+```
+
+#### Alert Colors
+
+Use with outlines on backgrounds set as an alert color.
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+outline-on-success-token
+outline-on-warning-token
+outline-on-error-token
+outline-on-info-token
 ```
 
 ### Outline Style
@@ -239,6 +281,8 @@ outline-container-token
 
 ### Ring Color
 
+#### Color Palette
+
 Swaps between specified color shades on light/dark mode change.
 
 ```text
@@ -251,7 +295,21 @@ ring-secondary-900-100-token
 ring-tertiary-800-200-token
 ```
 
+#### Alert Colors
+
+Use with rings on backgrounds set as an alert color.
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+ring-on-success-token
+ring-on-warning-token
+ring-on-error-token
+ring-on-info-token
+```
+
 ### Ring Offset Color
+
+#### Color Palette
 
 Swaps between specified color shades on light/dark mode change.
 
@@ -265,9 +323,23 @@ ring-offset-secondary-900-100-token
 ring-offset-tertiary-800-200-token
 ```
 
+#### Alert Colors
+
+Use with ring offsets on backgrounds set as an alert color.
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+ring-offset-on-success-token
+ring-offset-on-warning-token
+ring-offset-on-error-token
+ring-offset-on-info-token
+```
+
 ## Effects
 
 ### Box Shadow Color
+
+#### Color Palette
 
 Swaps between specified color shades on light/dark mode change.
 
@@ -279,6 +351,18 @@ shadow-tertiary-200-800-token
 shadow-primary-950-50-token
 shadow-secondary-900-100-token
 shadow-tertiary-800-200-token
+```
+
+#### Alert Colors
+
+Use with box shadows on backgrounds set as an alert color.
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+shadow-on-success-token
+shadow-on-warning-token
+shadow-on-error-token
+shadow-on-info-token
 ```
 
 ## Interactivity
