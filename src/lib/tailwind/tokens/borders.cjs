@@ -137,5 +137,73 @@ module.exports = () => {
     })
   })
 
+  /* Alert Borders Colors */
+  settings.alertColorNames.forEach((alertColorName) => {
+    // eslint-disable-next-line lines-around-comment
+
+    /* ----- Border ----- */
+
+    /* All Sides */
+    borderClasses[`.border-on-${alertColorName}-token`] = {
+      'border-color': `rgb(var(--on-${alertColorName}))`,
+    }
+
+    /* Top Side */
+    borderClasses[`.border-t-on-${alertColorName}-token`] = {
+      'border-top-color': `rgb(var(--on-${alertColorName}))`,
+    }
+
+    /* Right Side */
+    borderClasses[`.border-r-on-${alertColorName}-token`] = {
+      'border-right-color': `rgb(var(--on-${alertColorName}))`,
+    }
+
+    /* Bottom Side */
+    borderClasses[`.border-b-on-${alertColorName}-token`] = {
+      'border-bottom-color': `rgb(var(--on-${alertColorName}))`,
+    }
+
+    /* Left Side */
+    borderClasses[`.border-l-on-${alertColorName}-token`] = {
+      'border-left-color': `rgb(var(--on-${alertColorName}))`,
+    }
+
+    /* Vertical Sides */
+    borderClasses[`.border-x-on-${alertColorName}-token`] = {
+      'border-right-color': `rgb(var(--on-${alertColorName}))`,
+      'border-left-color': `rgb(var(--on-${alertColorName}))`,
+    }
+
+    /* Horizontal Sides */
+    borderClasses[`.border-y-on-${alertColorName}-token`] = {
+      'border-top-color': `rgb(var(--on-${alertColorName}))`,
+      'border-bottom-color': `rgb(var(--on-${alertColorName}))`,
+    }
+
+    /* ----- Divide ----- */
+    borderClasses[`.divide-on-${alertColorName}-token`] = {
+      '--tw-divide-opacity': 1,
+      // eslint-disable-next-line max-len
+      'border-color': `rgb(var(--on-${alertColorName})/var(--tw-divide-opacity))`,
+    }
+
+    /* ----- Outline ----- */
+    borderClasses[`.outline-on-${alertColorName}-token`] = {
+      'outline-color': `rgb(var(--on-${alertColorName}))`,
+    }
+
+    /* ----- Ring ----- */
+    borderClasses[`.ring-on-${alertColorName}-token`] = {
+      '--tw-ring-opacity': 1,
+      // eslint-disable-next-line max-len
+      '--tw-ring-color': `rgb(var(--on-${alertColorName})/var(--tw-ring-opacity))`,
+    }
+
+    /* ----- Ring Offset ----- */
+    borderClasses[`.ring-offset-on-${alertColorName}-token`] = {
+      '--tw-ring-offset-color': `rgb(var(--on-${alertColorName}))`,
+    }
+  })
+
   return borderClasses
 }
