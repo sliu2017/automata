@@ -27,5 +27,17 @@ module.exports = () => {
     })
   })
 
+  /* Alert Effects Colors */
+  settings.alertColorNames.forEach((alertColorName) => {
+    // eslint-disable-next-line lines-around-comment
+
+    /* Box Shadow Colors on Alert Color Background */
+    effectClasses[`.shadow-on-${alertColorName}-token`] = {
+      // eslint-disable-next-line max-len
+      '--tw-shadow-color': `rgb(var(--on-${alertColorName}) / ${boxShadowAlpha})`,
+      '--tw-shadow': 'var(--tw-shadow-colored)',
+    }
+  })
+
   return effectClasses
 }
