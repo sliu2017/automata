@@ -1,4 +1,98 @@
 /* YoRHa Theme */
 
 :root {
+  /* ----- Typography ----- */
+  --font-family: system-ui;
+  --font-family-heading: system-ui;
+  --font: 400;
+  --font-heading: 700;
+  --tracking: 0em;
+  --tracking-heading: 0em;
+  --leading: 1;
+  --leading-heading: 1;
+  --decoration: 1px;
+  --decoration-heading: 2px;
+  --underline-offset: 1px;
+  --underline-offset-heading: 1px;
+  --text-transform: none;
+  --text-transform-heading: none;
+  --indent: 0px;
+  --indent-heading: 0px;
+  /* ----- SVG ----- */
+  --stroke: 1px;
+  --stroke-heading: 1px;
+  /* ----- Borders ----- */
+  --rounded: 0px;
+  --rounded-container: 0px;
+  --border: 2px;
+  --border-container: 2px;
+  --border-style: solid;
+  --border-style-container: solid;
+  --divide: 1px;
+  --divide-container: 1px;
+  --divide-style: solid;
+  --divide-style-container: solid;
+  --outline: 1px;
+  --outline-container: 1px;
+  --outline-style: solid;
+  --outline-style-container: solid;
+  --outline-offset: 0px;
+  --outline-offset-container: 0px;
+  --ring: 3px;
+  --ring-container: 3px;
+  --ring-offset: 0px;
+  --ring-offset-container: 0px;
+  /* ----- Effects ----- */
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-container: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  /* ----- Transitions & Animations ----- */
+  --duration: 300ms;
+  --delay: 0s;
+  /* ----- Colors ----- */
+  /* Primary */
+  --color-primary-50: 249 248 243; /* #f9f8f3 */
+	--color-primary-100: 240 239 228; /* #f0efe4 */
+	--color-primary-200: 220 216 192; /* #dcd8c0 */
+	--color-primary-300: 205 198 164; /* #cdc6a4 */
+	--color-primary-400: 183 171 128; /* #b7ab80 */
+	--color-primary-500: 169 152 102; /* #a99866 */
+	--color-primary-600: 155 134 91; /* #9b865b */
+	--color-primary-700: 130 109 76; /* #826d4c */
+	--color-primary-800: 106 89 66; /* #6a5942 */
+	--color-primary-900: 87 73 55; /* #574937 */
+  --color-primary-950: 46 38 28; /* #2e261c */
+  /* Secondary */
+  --color-secondary-50: 247 247 245; /* #f7f7f5 */
+	--color-secondary-100: 237 236 231; /* #edece7 */
+	--color-secondary-200: 219 216 205; /* #dbd8cd */
+	--color-secondary-300: 186 181 161; /* #bab5a1 */
+	--color-secondary-400: 171 163 140; /* #aba38c */
+	--color-secondary-500: 153 142 118; /* #998e76 */
+	--color-secondary-600: 141 127 105; /* #8d7f69 */
+	--color-secondary-700: 117 105 89; /* #756959 */
+	--color-secondary-800: 97 87 75; /* #61574b */
+	--color-secondary-900: 79 72 63; /* #4f483f */
+  --color-secondary-950: 42 37 32; /* #2a2520 */
+  /* Tertiary */
+  --color-tertiary-50: 248 247 244; /* #f8f7f4*/
+	--color-tertiary-100: 239 238 229; /* #efeee5 */
+	--color-tertiary-200: 221 219 203; /* #dddbcb */
+	--color-tertiary-300: 204 200 177; /* #ccc8b1 */
+	--color-tertiary-400: 176 167 135; /* #b0a787 */
+	--color-tertiary-500: 160 148 111; /* #a0946f */
+	--color-tertiary-600: 147 131 99; /* #938363 */
+	--color-tertiary-700: 123 109 83; /* #7b6d53 */
+	--color-tertiary-800: 101 89 71; /* #655947 */
+	--color-tertiary-900: 82 72 60; /* #52483c */
+  --color-tertiary-950: 43 37 31; /* #2b251f */
+  /* Alert Colors */
+  --color-success: 158 174 138; /* #9eae8a */
+  --color-warning: 251 197 153; /* #fbc599 */
+  --color-error: 237 86 114; /* #ed5672 */
+  --color-info: 204 200 177; /* #ccc8b1 */
+  /* "On" Colors */
+  --on-success: 247 247 245; /* #f7f7f5 */
+  --on-warning: 247 247 245; /* #f7f7f5 */
+  --on-error: 247 247 245; /* #f7f7f5 */
+  --on-info: 247 247 245; /* #f7f7f5 */
 }
