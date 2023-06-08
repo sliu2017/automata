@@ -1,0 +1,34 @@
+/* Stylesheet: typography.css */
+
+@layer base {
+  body {
+    @apply font-token text-base text-primary-950-50-token font-base tracking-base leading-base decoration-base underline-offset-base indent-base stroke-base;
+  }
+
+  /* ----- Headings ----- */
+  h1:not(.unstyled) {
+    @apply font-heading-token text-5xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+  }
+
+  h2:not(.unstyled) {
+    @apply font-heading-token text-4xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+  }
+
+  h3:not(.unstyled) {
+    @apply font-heading-token text-2xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+  }
+
+  h4:not(.unstyled) {
+    @apply font-heading-token text-xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+  }
+
+  h5:not(.unstyled) {
+    @apply font-heading-token text-lg font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+  }
+
+  h6:not(.unstyled) {
+    @apply font-heading-token text-base font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+  }
+
+  /* ----- Elements ----- */
+}

@@ -4,7 +4,7 @@
   /* ----- Body ----- */
 
   body {
-    @apply bg-secondary-50-950-token;
+    @apply bg-primary-50-950-token;
   }
 
   /* ----- Selection ----- */
@@ -30,7 +30,7 @@
     @apply h-2 w-2;
   }
   ::-webkit-scrollbar-track {
-    @apply !bg-secondary-50-950-token px-[1px];
+    @apply !bg-primary-50-950-token px-[1px];
   }
   ::-webkit-scrollbar-thumb {
     @apply rounded-base bg-primary-400-600-token;
@@ -56,7 +56,7 @@
   /* ----- hr ----- */
 
   hr:not(.divider) {
-    @apply border-primary-300-700-token block border-t border-solid;
+    @apply border-primary-300-700-token block border-t-[0.1rem] border-solid mx-[1rem];
   }
   .divider-vertical {
     @apply border-primary-300-700-token mx-auto inline-block min-h-[10px] border-l border-solid;
