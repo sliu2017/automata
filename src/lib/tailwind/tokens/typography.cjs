@@ -20,13 +20,13 @@ module.exports = () => {
       // eslint-disable-next-line lines-around-comment
       /* Text Colors */
       typographyClasses[`.text-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
-        '--tw-text-opacity': 1,
+        '--tw-text-opacity': '1',
         color: `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-text-opacity))`,
       }
       typographyClasses[
         `.dark .text-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`
       ] = {
-        '--tw-text-opacity': 1,
+        '--tw-text-opacity': '1',
         color: `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-text-opacity))`,
       }
 
@@ -50,7 +50,7 @@ module.exports = () => {
 
     /* Text Color on Alert Color Background */
     typographyClasses[`.text-on-${alertColorName}-token`] = {
-      '--tw-text-opacity': 1,
+      '--tw-text-opacity': '1',
       color: `rgb(var(--on-${alertColorName})/var(--tw-text-opacity))`,
     }
 

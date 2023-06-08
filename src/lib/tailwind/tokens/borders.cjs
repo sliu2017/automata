@@ -90,13 +90,13 @@ module.exports = () => {
       /* ----- Divide ----- */
 
       borderClasses[`.divide-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
-        '--tw-divide-opacity': 1,
+        '--tw-divide-opacity': '1',
         // eslint-disable-next-line max-len
         'border-color': `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-divide-opacity))`,
       }
       borderClasses[`.dark .divide-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] =
         {
-          '--tw-divide-opacity': 1,
+          '--tw-divide-opacity': '1',
           // eslint-disable-next-line max-len
           'border-color': `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-divide-opacity))`,
         }
@@ -113,12 +113,12 @@ module.exports = () => {
       /* ----- Ring ----- */
 
       borderClasses[`.ring-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
-        '--tw-ring-opacity': 1,
+        '--tw-ring-opacity': '1',
         // eslint-disable-next-line max-len
         '--tw-ring-color': `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-ring-opacity))`,
       }
       borderClasses[`.dark .ring-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
-        '--tw-ring-opacity': 1,
+        '--tw-ring-opacity': '1',
         // eslint-disable-next-line max-len
         '--tw-ring-color': `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-ring-opacity))`,
       }
@@ -182,7 +182,7 @@ module.exports = () => {
 
     /* ----- Divide ----- */
     borderClasses[`.divide-on-${alertColorName}-token`] = {
-      '--tw-divide-opacity': 1,
+      '--tw-divide-opacity': '1',
       // eslint-disable-next-line max-len
       'border-color': `rgb(var(--on-${alertColorName})/var(--tw-divide-opacity))`,
     }
@@ -194,7 +194,7 @@ module.exports = () => {
 
     /* ----- Ring ----- */
     borderClasses[`.ring-on-${alertColorName}-token`] = {
-      '--tw-ring-opacity': 1,
+      '--tw-ring-opacity': '1',
       // eslint-disable-next-line max-len
       '--tw-ring-color': `rgb(var(--on-${alertColorName})/var(--tw-ring-opacity))`,
     }
