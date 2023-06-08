@@ -1,6 +1,6 @@
 /* Generate Background Design Tokens */
 
-const settings = require('../settings')
+const settings = require('../settings.cjs')
 
 /* ----- Default Alphas ----- */
 

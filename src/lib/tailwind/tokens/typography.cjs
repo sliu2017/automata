@@ -1,6 +1,6 @@
 /* Generate Typography Design Tokens */
 
-const settings = require('../settings')
+const settings = require('../settings.cjs')
 
 module.exports = () => {
   const typographyClasses = {

@@ -4,13 +4,13 @@
   /* ----- Body ----- */
 
   body {
-    // @apply bg-surface-50-900-token;
+    @apply bg-primary-50-950-token;
   }
 
   /* ----- Selection ----- */
 
   ::selection {
-    // @apply bg-primary-500/30;
+    @apply bg-primary-500/30;
   }
 
   /* ----- Focus ----- */
@@ -30,10 +30,10 @@
     @apply h-2 w-2;
   }
   ::-webkit-scrollbar-track {
-    // @apply !bg-surface-50-900-token px-[1px];
+    @apply !bg-primary-50-950-token px-[1px];
   }
   ::-webkit-scrollbar-thumb {
-    // @apply rounded-token bg-surface-400-500-token;
+    @apply rounded-base bg-primary-400-600-token;
   }
 
   /* Firefox */
@@ -56,9 +56,9 @@
   /* ----- hr ----- */
 
   hr:not(.divider) {
-    // @apply border-surface-300-600-token block border-t border-solid;
+    @apply border-primary-300-700-token block border-t border-solid;
   }
   .divider-vertical {
-    // @apply border-surface-300-600-token mx-auto inline-block min-h-[10px] border-l border-solid;
+    @apply border-primary-300-700-token mx-auto inline-block min-h-[10px] border-l border-solid;
   }
 }

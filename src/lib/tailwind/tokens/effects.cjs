@@ -1,6 +1,6 @@
 /* Generate Effect Design Tokens */
 
-const settings = require('../settings')
+const settings = require('../settings.cjs')
 
 /* Box Shadow Alpha */
 const boxShadowAlpha = 0.4
