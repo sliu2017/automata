@@ -4,7 +4,7 @@
   /* ----- Body ----- */
 
   body {
-    @apply bg-primary-50-950-token;
+    @apply bg-secondary-50-950-token;
   }
 
   /* ----- Selection ----- */
@@ -30,7 +30,7 @@
     @apply h-2 w-2;
   }
   ::-webkit-scrollbar-track {
-    @apply !bg-primary-50-950-token px-[1px];
+    @apply !bg-secondary-50-950-token px-[1px];
   }
   ::-webkit-scrollbar-thumb {
     @apply rounded-base bg-primary-400-600-token;
