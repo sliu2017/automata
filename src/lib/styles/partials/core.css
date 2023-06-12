@@ -56,7 +56,7 @@
   /* ----- hr ----- */
 
   hr:not(.divider) {
-    @apply border-primary-300-700-token block border-t-[0.1rem] border-solid mx-[1rem];
+    @apply border-primary-300-700-token block border-t-[0.1rem] border-solid mx-auto;
   }
   .divider-vertical {
     @apply border-primary-300-700-token mx-auto inline-block min-h-[10px] border-l border-solid;
