@@ -24,22 +24,22 @@
   /* ----- Borders ----- */
   --rounded: 0px;
   --rounded-container: 0px;
-  --border: 2px;
-  --border-container: 2px;
-  --border-style: solid;
-  --border-style-container: solid;
+  --border: 0px;
+  --border-container: 0px;
+  --border-style: none;
+  --border-style-container: none;
   --divide: 1px;
   --divide-container: 1px;
   --divide-style: solid;
   --divide-style-container: solid;
-  --outline: 1px;
-  --outline-container: 1px;
-  --outline-style: solid;
-  --outline-style-container: solid;
+  --outline: 0px;
+  --outline-container: 0px;
+  --outline-style: none;
+  --outline-style-container: none;
   --outline-offset: 0px;
   --outline-offset-container: 0px;
-  --ring: 3px;
-  --ring-container: 3px;
+  --ring: 0px;
+  --ring-container: 0px;
   --ring-offset: 0px;
   --ring-offset-container: 0px;
   /* ----- Effects ----- */
