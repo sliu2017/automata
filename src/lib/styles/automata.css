@@ -8,11 +8,6 @@
 /* Core */
 @import 'partials/core.css';
 
-/* Typography */
-@import 'partials/typography.css';
-
 /* Tailwind Elements */
 @import 'partials/elements.css';
 
-/* Variants */
-@import 'partials/variants.css';

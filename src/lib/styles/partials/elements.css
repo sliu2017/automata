@@ -2,3 +2,5 @@
 
 /* Tailwind Elements */
 @import '../elements/buttons.css';
+@import '../elements/dividers.css';
+@import '../elements/typography.css';
