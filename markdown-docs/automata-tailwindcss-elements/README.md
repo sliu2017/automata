@@ -11,6 +11,7 @@ The Automata Component Library contains a variety of classes that developers may
 - [Cards](cards.md)
 - [Chips](chips.md)
 - [Code Blocks](codeblocks.md)
+- [Dividers](dividers.md)
 - [Lists](lists.md)
 - [Loadings](loadings.md)
 - [Menus](menus.md)
