@@ -92,6 +92,12 @@
   <li>
     <h6 class="h6">h6 (heading 6)</h6>
   </li>
+  <li>
+    <h1 class="h1 variant-shadowed-primary">h1 variant-shadowed-primary</h1>
+  </li>
+  <li>
+    <h2 class="h2 variant-banner border-primary-950-50-token">h2 variant-banner border-primary-950-50-token</h2>
+  </li>
 </ul>
 <h2 class="h2">Ruby</h2>
 <ruby>
