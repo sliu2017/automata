@@ -51,51 +51,51 @@
     @apply font-heading-token text-base font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
   }
 
-  .variant-shadowed-primary {
+  .heading-shadowed-primary {
     text-shadow: 6px 6px 0 rgb(var(--color-primary-500) / 0.3);
   }
 
-  .variant-shadowed-secondary {
+  .heading-shadowed-secondary {
     text-shadow: 6px 6px 0 rgb(var(--color-secondary-500) / 0.3);
   }
 
-  .variant-shadowed-tertiary {
+  .heading-shadowed-tertiary {
     text-shadow: 6px 6px 0 rgb(var(--color-tertiary-500) / 0.3);
   }
 
-  .variant-shadowed-success {
+  .heading-shadowed-success {
     text-shadow: 6px 6px 0 rgb(var(--color-success) / 0.3);
   }
 
-  .variant-shadowed-warning {
+  .heading-shadowed-warning {
     text-shadow: 6px 6px 0 rgb(var(--color-warning) / 0.3);
   }
 
-  .variant-shadowed-error {
+  .heading-shadowed-error {
     text-shadow: 6px 6px 0 rgb(var(--color-error) / 0.3);
   }
 
-  .variant-shadowed-info {
+  .heading-shadowed-info {
     text-shadow: 6px 6px 0 rgb(var(--color-info) / 0.3);
   }
 
-  .variant-shadowed-on-success {
+  .heading-shadowed-on-success {
     text-shadow: 6px 6px 0 rgb(var(--on-success) / 0.3);
   }
 
-  .variant-shadowed-on-warning {
+  .heading-shadowed-on-warning {
     text-shadow: 6px 6px 0 rgb(var(--on-warning) / 0.3);
   }
 
-  .variant-shadowed-on-error {
+  .heading-shadowed-on-error {
     text-shadow: 6px 6px 0 rgb(var(--on-error) / 0.3);
   }
 
-  .variant-shadowed-on-info {
+  .heading-shadowed-on-info {
     text-shadow: 6px 6px 0 rgb(var(--on-info) / 0.3);
   }
 
-  .variant-banner {
+  .heading-banner {
     @apply font-light border-y px-4;
   }
 
