@@ -3,7 +3,7 @@
 <h2 class="h2">Inline Elements</h2>
 <ul>
   <li>
-    <a href="www.google.com">a (anchor)</a>
+    <a class="a" href="www.google.com">a (anchor)</a>
   </li>
   <li>
     <abbr>abbr (abbreviation)</abbr>
@@ -15,7 +15,7 @@
     <cite>cite (citation)</cite>
   </li>
   <li>
-    <code>code (code)</code>
+    <code class="code">code (code)</code>
   </li>
   <li>
     <dfn>dfn (definition)</dfn>
@@ -27,10 +27,10 @@
     <i>i (idiomatic)</i>
   </li>
   <li>
-    <kbd>kbd (kbd)</kbd>
+    <kbd class="kbd">kbd (kbd)</kbd>
   </li>
   <li>
-    <mark>mark (mark)</mark>
+    <mark class="mark">mark (mark)</mark>
   </li>
   <li>
     <p>p (paragraph)</p>
@@ -57,7 +57,7 @@
     <strong>strong (strong)</strong>
   </li>
   <li>
-    <time>time (datetime)</time>
+    <time class="time">time (datetime)</time>
   </li>
   <li>
     <u>u (underline)</u>
@@ -70,12 +70,6 @@
   </li>
   <li>
     sub<sub>(subscript)</sub>
-  </li>
-  <li>
-    <del>del (deleted)</del>
-  </li>
-  <li>
-    <ins>ins (inserted)</ins>
   </li>
 </ul>
 <h2 class="h2">Headings</h2>
@@ -103,3 +97,15 @@
 <ruby>
   Ruby <rt> (ruby) </rt>
 </ruby>
+<h2 class="h2">Blockquote</h2>
+<blockquote class="blockquote">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</blockquote>
+<h2 class="h2">Preformatted</h2>
+<pre class="pre">
+  const message = "Hello World!"
+  console.log(message)
+</pre>
+<h2 class="h2">Deleted and Inserted</h2>
+<del class="del">del (deleted)</del>
+<ins class="ins">ins (inserted)</ins>

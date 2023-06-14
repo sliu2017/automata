@@ -2,33 +2,76 @@
 
 @layer base {
   body {
-    @apply font-token text-base text-primary-950-50-token font-base tracking-base leading-base decoration-base underline-offset-base indent-base stroke-base;
+    @apply font-token text-base text-primary-950-50-token font-base tracking-base leading-base decoration-base underline-offset-base indent-base stroke-base text-transform-token;
+  }
+
+  /* ----- Elements ----- */
+  .a {
+    @apply underline;
+  }
+
+  .code {
+    @apply font-mono text-sm text-primary-900-100-token bg-primary-500/30 py-0.5 px-1;
+  }
+
+  .kbd {
+    @apply font-sans font-bold text-sm text-primary-900-100-token bg-primary-100/70 dark:bg-primary-900/70 p-0.5 border border-primary-200/70 dark:border-primary-800/70 ring-1 ring-primary-300/70 dark:ring-primary-700/70;
+  }
+
+  .mark {
+    @apply text-primary-950-50-token bg-primary-500/30;
+  }
+
+  .time {
+    @apply text-sm text-primary-900-100-token;
   }
 
   /* ----- Headings ----- */
   .h1 {
-    @apply font-heading-token text-5xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+    @apply font-heading-token text-5xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
   }
 
   .h2 {
-    @apply font-heading-token text-4xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+    @apply font-heading-token text-4xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
   }
 
   .h3 {
-    @apply font-heading-token text-2xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+    @apply font-heading-token text-2xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
   }
 
   .h4 {
-    @apply font-heading-token text-xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+    @apply font-heading-token text-xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
   }
 
   .h5 {
-    @apply font-heading-token text-lg font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+    @apply font-heading-token text-lg font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
   }
 
   .h6 {
-    @apply font-heading-token text-base font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading;
+    @apply font-heading-token text-base font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
   }
 
-  /* ----- Elements ----- */
+  /* ----- Blockquote ----- */
+  .blockquote {
+    @apply p-2 pl-8 relative before:absolute before:top-0 before:left-2 before:bottom-0 before:h-full before:w-4 before:border-primary-500/70 before:border-l-8 before:border-r-2;
+  }
+
+  /* ----- Preformatted ----- */
+  .pre {
+    @apply font-mono text-sm bg-primary-500/30 p-4 whitespace-pre-wrap overflow-x-auto;
+  }
+
+  /* ----- Deleted and Inserted ----- */
+  .del, .ins {
+    @apply font-mono text-sm block relative p-0.5 pl-5 whitespace-pre-wrap overflow-x-auto before:absolute before:left-1;
+    text-decoration: none;
+  }
+
+  .ins {
+    @apply text-on-success-token bg-success before:content-['+'];
+  }
+
+  .del {
+    @apply text-on-error-token bg-error before:content-['-'];
+  }
 }
