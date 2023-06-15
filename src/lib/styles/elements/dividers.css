@@ -2,9 +2,9 @@
 
 @layer base {
   .hr {
-    @apply border-primary-300-700-token block border-t-[0.1rem] border-solid mx-auto;
+    @apply mx-auto block border-t-[0.1rem] border-solid border-primary-300-700-token;
   }
   .divider-vertical {
-    @apply border-primary-300-700-token mx-auto inline-block min-h-[10px] border-l border-solid;
+    @apply mx-auto inline-block min-h-[10px] border-l border-solid border-primary-300-700-token;
   }
 }

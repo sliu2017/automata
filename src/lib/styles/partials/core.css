@@ -30,7 +30,7 @@
     @apply h-2 w-2;
   }
   ::-webkit-scrollbar-track {
-    @apply !bg-primary-50-950-token px-[1px];
+    @apply px-[1px] !bg-primary-50-950-token;
   }
   ::-webkit-scrollbar-thumb {
     @apply rounded-base bg-primary-400-600-token;

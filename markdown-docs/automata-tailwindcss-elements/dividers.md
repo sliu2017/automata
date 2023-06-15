@@ -33,7 +33,7 @@ To change its color, apply a border color class marked with `!important`.
 The `.hr` class is equivalent to the following:
 
 ```html
-<hr class="border-primary-300-700-token block border-t-[0.1rem] border-solid mx-auto" />
+<hr class="mx-auto block border-t-[0.1rem] border-solid border-primary-300-700-token" />
 ```
 
 ## .divider-vertical
@@ -67,5 +67,7 @@ To change its color, apply a border color class marked with `!important`.
 The `.divider-vertical` class is equivalent to the following:
 
 ```html
-<span class="border-primary-300-700-token mx-auto inline-block min-h-[10px] border-l border-solid ..." />
+<span
+  class="... mx-auto inline-block min-h-[10px] border-l border-solid border-primary-300-700-token"
+/>
 ```

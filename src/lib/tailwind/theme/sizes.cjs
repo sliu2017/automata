@@ -7,15 +7,15 @@ module.exports = () => {
 
   /* Border Radius */
   sizes.borderRadius = {
-    'none': '0',
-    'sm': '0.125rem',
+    none: '0',
+    sm: '0.125rem',
     DEFAULT: '0.25rem',
-    'md': '0.375rem',
-    'lg': '0.5rem',
-    'xl': '0.75rem',
+    md: '0.375rem',
+    lg: '0.5rem',
+    xl: '0.75rem',
     '2xl': '1rem',
     '3xl': '1.5rem',
-    'full': '9999px',
+    full: '9999px',
     base: 'var(--rounded)',
     container: 'var(--rounded-container)',
   }
@@ -23,10 +23,10 @@ module.exports = () => {
   /* Border Width */
   sizes.borderWidth = {
     DEFAULT: '1px',
-    '0': '0',
-    '2': '2px',
-    '4': '4px',
-    '8': '8px',
+    0: '0',
+    2: '2px',
+    4: '4px',
+    8: '8px',
     base: 'var(--border)',
     container: 'var(--border-container)',
   }
@@ -34,10 +34,10 @@ module.exports = () => {
   /* Divide Width */
   sizes.divideWidth = {
     DEFAULT: '1px',
-    '0': '0',
-    '2': '2px',
-    '4': '4px',
-    '8': '8px',
+    0: '0',
+    2: '2px',
+    4: '4px',
+    8: '8px',
     base: 'var(--divide)',
     container: 'var(--divide-container)',
   }

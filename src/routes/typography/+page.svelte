@@ -66,10 +66,12 @@
     <var>var (variable)</var>
   </li>
   <li>
-    sup<sup>(superscript)</sup>
+    sup
+    <sup>(superscript)</sup>
   </li>
   <li>
-    sub<sub>(subscript)</sub>
+    sub
+    <sub>(subscript)</sub>
   </li>
 </ul>
 <h2 class="h2">Headings</h2>
@@ -96,16 +98,22 @@
     <h1 class="h1 heading-shadowed-primary">h1 heading-shadowed-primary</h1>
   </li>
   <li>
-    <h2 class="h2 heading-banner border-primary-950-50-token">h2 heading-banner border-primary-950-50-token</h2>
+    <h2 class="h2 heading-banner border-primary-950-50-token">
+      h2 heading-banner border-primary-950-50-token
+    </h2>
   </li>
 </ul>
 <h2 class="h2">Ruby</h2>
 <ruby>
-  Ruby <rt> (ruby) </rt>
+  Ruby <rt>(ruby)</rt>
 </ruby>
 <h2 class="h2">Blockquote</h2>
 <blockquote class="blockquote">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+  in culpa qui officia deserunt mollit anim id est laborum.
 </blockquote>
 <h2 class="h2">Preformatted</h2>
 <pre class="pre">

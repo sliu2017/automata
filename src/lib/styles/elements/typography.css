@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply font-token text-base text-primary-950-50-token font-base tracking-base leading-base decoration-base underline-offset-base indent-base stroke-base text-transform-token;
+    @apply stroke-base indent-base text-base font-base leading-base tracking-base decoration-base underline-offset-base font-token text-transform-token text-primary-950-50-token;
   }
 
   /* ----- Elements ----- */
@@ -11,15 +11,15 @@
   }
 
   .code {
-    @apply font-mono text-sm text-primary-900-100-token bg-primary-500/30 py-0.5 px-1;
+    @apply bg-primary-500/30 px-1 py-0.5 font-mono text-sm text-primary-900-100-token;
   }
 
   .kbd {
-    @apply font-sans font-bold text-sm text-primary-900-100-token bg-primary-100/70 dark:bg-primary-900/70 p-0.5 border border-primary-200/70 dark:border-primary-800/70 ring-1 ring-primary-300/70 dark:ring-primary-700/70;
+    @apply border border-primary-200/70 bg-primary-100/70 p-0.5 font-sans text-sm font-bold ring-1 ring-primary-300/70 text-primary-900-100-token dark:border-primary-800/70 dark:bg-primary-900/70 dark:ring-primary-700/70;
   }
 
   .mark {
-    @apply text-primary-950-50-token bg-primary-500/30;
+    @apply bg-primary-500/30 text-primary-950-50-token;
   }
 
   .time {
@@ -28,27 +28,27 @@
 
   /* ----- Headings ----- */
   .h1 {
-    @apply font-heading-token text-5xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
+    @apply stroke-heading indent-heading text-5xl font-heading leading-heading tracking-heading decoration-heading underline-offset-heading font-heading-token text-transform-heading-token;
   }
 
   .h2 {
-    @apply font-heading-token text-4xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
+    @apply stroke-heading indent-heading text-4xl font-heading leading-heading tracking-heading decoration-heading underline-offset-heading font-heading-token text-transform-heading-token;
   }
 
   .h3 {
-    @apply font-heading-token text-2xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
+    @apply stroke-heading indent-heading text-2xl font-heading leading-heading tracking-heading decoration-heading underline-offset-heading font-heading-token text-transform-heading-token;
   }
 
   .h4 {
-    @apply font-heading-token text-xl font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
+    @apply stroke-heading indent-heading text-xl font-heading leading-heading tracking-heading decoration-heading underline-offset-heading font-heading-token text-transform-heading-token;
   }
 
   .h5 {
-    @apply font-heading-token text-lg font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
+    @apply stroke-heading indent-heading text-lg font-heading leading-heading tracking-heading decoration-heading underline-offset-heading font-heading-token text-transform-heading-token;
   }
 
   .h6 {
-    @apply font-heading-token text-base font-heading tracking-heading leading-heading decoration-heading underline-offset-heading indent-heading stroke-heading text-transform-heading-token;
+    @apply stroke-heading indent-heading text-base font-heading leading-heading tracking-heading decoration-heading underline-offset-heading font-heading-token text-transform-heading-token;
   }
 
   .heading-shadowed-primary {
@@ -96,30 +96,31 @@
   }
 
   .heading-banner {
-    @apply font-light border-y px-4;
+    @apply border-y px-4 font-light;
   }
 
   /* ----- Blockquote ----- */
   .blockquote {
-    @apply p-2 pl-8 relative before:absolute before:top-0 before:left-2 before:bottom-0 before:h-full before:w-4 before:border-primary-500/70 before:border-l-8 before:border-r-2;
+    @apply relative p-2 pl-8 before:absolute before:bottom-0 before:left-2 before:top-0 before:h-full before:w-4 before:border-l-8 before:border-r-2 before:border-primary-500/70;
   }
 
   /* ----- Preformatted ----- */
   .pre {
-    @apply font-mono text-sm bg-primary-500/30 p-4 whitespace-pre-wrap overflow-x-auto;
+    @apply overflow-x-auto whitespace-pre-wrap bg-primary-500/30 p-4 font-mono text-sm;
   }
 
   /* ----- Deleted and Inserted ----- */
-  .del, .ins {
-    @apply font-mono text-sm block relative p-0.5 pl-5 whitespace-pre-wrap overflow-x-auto before:absolute before:left-1;
+  .del,
+  .ins {
+    @apply relative block overflow-x-auto whitespace-pre-wrap p-0.5 pl-5 font-mono text-sm before:absolute before:left-1;
     text-decoration: none;
   }
 
   .ins {
-    @apply text-on-success-token bg-success before:content-['+'];
+    @apply bg-success text-on-success-token before:content-['+'];
   }
 
   .del {
-    @apply text-on-error-token bg-error before:content-['-'];
+    @apply bg-error text-on-error-token before:content-['-'];
   }
 }
