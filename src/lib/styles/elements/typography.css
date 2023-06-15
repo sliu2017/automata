@@ -5,7 +5,7 @@
     @apply stroke-base indent-base text-base font-base leading-base tracking-base decoration-base underline-offset-base font-token text-transform-token text-primary-950-50-token;
   }
 
-  /* ----- Elements ----- */
+  /* ----- Inline Elements ----- */
   .a {
     @apply underline;
   }
@@ -116,11 +116,11 @@
     text-decoration: none;
   }
 
-  .ins {
-    @apply bg-success text-on-success-token before:content-['+'];
-  }
-
   .del {
     @apply bg-error text-on-error-token before:content-['-'];
+  }
+
+  .ins {
+    @apply bg-success text-on-success-token before:content-['+'];
   }
 }
