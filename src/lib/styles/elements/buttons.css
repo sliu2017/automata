@@ -21,15 +21,15 @@
 
   /* ----- Variants ----- */
   .btn-standard-primary {
-    @apply bg-primary-900-100-token text-primary-100-900-token;
+    @apply bg-primary-950-50-token text-primary-50-950-token;
   }
 
   .btn-standard-secondary {
-    @apply bg-secondary-900-100-token text-secondary-100-900-token;
+    @apply bg-secondary-950-50-token text-secondary-50-950-token;
   }
 
   .btn-standard-tertiary {
-    @apply bg-tertiary-900-100-token text-tertiary-100-900-token;
+    @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
   }
 
   .btn-standard-success {
