@@ -3,7 +3,7 @@
 <h2 class="h2">Inline Elements</h2>
 <ul>
   <li>
-    <a class="a" href="www.google.com">a (anchor)</a>
+    <a class="a" href="https://www.google.com/">a (anchor)</a>
   </li>
   <li>
     <abbr>abbr (abbreviation)</abbr>

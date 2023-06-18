@@ -17,13 +17,13 @@ In addition to the typography styling, Automata provides classes that may be app
 To create an anchor element, apply the `.a` class to the `a` tag.
 
 ```html
-<a class="a" href="www.google.com">a (anchor)</a>
+<a class="a" href="https://www.google.com/">a (anchor)</a>
 ```
 
 The `.a` class is equivalent to the following:
 
 ```html
-<a class="underline" href="www.google.com">a (anchor)</a>
+<a class="underline" href="https://www.google.com/">a (anchor)</a>
 ```
 
 ### .code
