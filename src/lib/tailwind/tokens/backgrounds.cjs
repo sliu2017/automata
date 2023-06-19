@@ -58,7 +58,7 @@ module.exports = () => {
     backgroundClasses[`.bg-${alertColorName}-backdrop-token`] = {
       'background-color': `rgb(var(--color-${alertColorName}) / ${backdropAlpha})`,
     }
-    backgroundClasses[`bg-on-${alertColorName}-backdrop-token`] = {
+    backgroundClasses[`.bg-on-${alertColorName}-backdrop-token`] = {
       'background-color': `rgb(var(--on-${alertColorName}) / ${backdropAlpha})`,
     }
 
@@ -66,7 +66,7 @@ module.exports = () => {
     backgroundClasses[`.bg-${alertColorName}-hover-token:hover`] = {
       'background-color': `rgb(var(--color-${alertColorName}) / ${hoverAlpha})`,
     }
-    backgroundClasses[`bg-on-${alertColorName}-hover-token`] = {
+    backgroundClasses[`.bg-on-${alertColorName}-hover-token`] = {
       'background-color': `rgb(var(--on-${alertColorName}) / ${hoverAlpha})`,
     }
 
@@ -74,12 +74,12 @@ module.exports = () => {
     backgroundClasses[`.bg-${alertColorName}-active-token`] = {
       'background-color': `rgb(var(--color-${alertColorName}) / ${activeAlpha}) !important`,
     }
-    backgroundClasses[`bg-on-${alertColorName}-active-token`] = {
+    backgroundClasses[`.bg-on-${alertColorName}-active-token`] = {
       'background-color': `rgb(var(--on-${alertColorName}) / ${activeAlpha}) !important`,
     }
 
     /* "On" Background Colors */
-    backgroundClasses[`bg-on-${alertColorName}-token`] = {
+    backgroundClasses[`.bg-on-${alertColorName}-token`] = {
       'background-color': `rgb(var(--on-${alertColorName}))`,
     }
   })
