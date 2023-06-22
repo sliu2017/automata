@@ -7,7 +7,11 @@
     /* Typography */
     @apply whitespace-nowrap stroke-base text-center text-base font-base tracking-base font-token text-transform-token;
     /* Borders */
-    @apply rounded-base border-token outline-token;
+    @apply rounded-base border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
+    /* Shadow */
+    @apply shadow-base;
+    /* Flex Columns */
+    @apply inline-flex items-center justify-center space-x-2;
     /* Padding */
     @apply p-2;
     /* Appearance */
@@ -21,30 +25,101 @@
 
   /* ----- Variants ----- */
   .btn-standard-primary {
+    /* Color */
     @apply bg-primary-950-50-token text-primary-50-950-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
   }
 
   .btn-standard-secondary {
+    /* Color */
     @apply bg-secondary-950-50-token text-secondary-50-950-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
   }
 
   .btn-standard-tertiary {
+    /* Color */
     @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
   }
 
   .btn-standard-success {
+    /* Color */
     @apply bg-success text-on-success-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
   }
 
   .btn-standard-warning {
+    /* Color */
     @apply bg-warning text-on-warning-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
   }
 
   .btn-standard-error {
+    /* Color */
     @apply bg-error text-on-error-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
   }
 
   .btn-standard-info {
+    /* Color */
     @apply bg-info text-on-info-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  .btn-standard-on-success {
+    /* Color */
+    @apply text-success bg-on-success-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  .btn-standard-on-warning {
+    /* Color */
+    @apply text-warning bg-on-warning-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  .btn-standard-on-error {
+    /* Color */
+    @apply text-error bg-on-error-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  .btn-standard-on-info {
+    /* Color */
+    @apply text-info bg-on-info-token;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
   }
 }
