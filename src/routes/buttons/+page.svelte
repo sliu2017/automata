@@ -311,3 +311,50 @@
     {/each}
   </div>
 </div>
+<h2 class="h2">Disabled</h2>
+<div class="flex flex-col gap-4">
+  <div class="grid grid-cols-4 items-center justify-items-center gap-4">
+    <button class="btn btn-standard-primary" disabled>Disabled</button>
+    <button class="btn btn-standard-primary" disabled>
+      <span>
+        <i class="fa-solid fa-robot" />
+      </span>
+      <span>Disabled</span>
+    </button>
+    <button class="btn btn-yorha-primary" disabled>Disabled</button>
+    <button class="btn btn-yorha-primary" disabled>
+      <span>
+        <i class="fa-solid fa-robot" />
+      </span>
+      <span>Disabled</span>
+    </button>
+    <button class="btn btn-standard-primary btn-disabled">Disabled Class</button>
+    <button class="btn btn-standard-primary btn-disabled">
+      <span>
+        <i class="fa-solid fa-robot" />
+      </span>
+      <span>Disabled Class</span>
+    </button>
+    <button class="btn btn-yorha-primary btn-disabled">Disabled Class</button>
+    <button class="btn btn-yorha-primary btn-disabled">
+      <span>
+        <i class="fa-solid fa-robot" />
+      </span>
+      <span>Disabled Class</span>
+    </button>
+  </div>
+  <div class="grid grid-cols-4 items-center justify-items-center gap-4">
+    <button class="btn-icon btn-standard-primary" disabled>
+      <i class="fa-solid fa-robot" />
+    </button>
+    <button class="btn-icon btn-circle-primary" disabled>
+      <i class="fa-solid fa-robot" />
+    </button>
+    <button class="btn-icon btn-standard-primary btn-disabled">
+      <i class="fa-solid fa-robot" />
+    </button>
+    <button class="btn-icon btn-circle-primary btn-disabled">
+      <i class="fa-solid fa-robot" />
+    </button>
+  </div>
+</div>

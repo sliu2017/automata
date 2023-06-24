@@ -2,7 +2,16 @@
 
 @layer components {
   /* ----- Button States ----- */
-  .button-base-styles {
+
+  .btn-disabled {
+    @apply !cursor-not-allowed !opacity-50;
+  }
+
+  button:disabled {
+    @apply btn-disabled;
+  }
+
+  .btn-base-styles {
     /* Typography */
     @apply whitespace-nowrap stroke-base text-center text-base font-base tracking-base font-token text-transform-token;
     /* Borders */
@@ -15,7 +24,7 @@
 
   /* ----- Button ----- */
   .btn {
-    @apply button-base-styles;
+    @apply btn-base-styles;
     /* Borders */
     @apply rounded-base;
     /* Padding */
@@ -24,7 +33,7 @@
 
   /* ----- Icon Button ----- */
   .btn-icon {
-    @apply button-base-styles;
+    @apply btn-base-styles;
     /* Borders */
     @apply rounded-none;
     /* Padding */
@@ -67,7 +76,7 @@
     /* Shadow */
     @apply shadow-base;
     /* Hover Brightness */
-    @apply hover:brightness-[1.15];
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:brightness-[1.15];
     /* Transitions */
     @apply transition-all;
   }
@@ -165,15 +174,15 @@
     /* Content Area */
     @apply relative z-0 transition-all;
     /* Border Lines */
-    @apply before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:w-0 before:border-y-2 before:transition-all before:duration-150 before:ease-out;
+    @apply before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:w-0 before:border-y-2 before:transition-all before:duration-150 before:ease-out before:content-[''];
     /* Content Area Animation */
-    @apply after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:z-[-1] after:w-0 after:transition-all after:duration-150 after:ease-out;
+    @apply after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:z-[-1] after:w-0 after:transition-all after:duration-150 after:ease-out after:content-[''];
     /* Content Area on Hover */
-    @apply hover:bg-transparent hover:shadow-base;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:bg-transparent hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:shadow-base;
     /* Border Lines on Hover */
-    @apply hover:before:bottom-[-4px] hover:before:top-[-4px] hover:before:w-full;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:before:bottom-[-4px] hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:before:top-[-4px] hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:before:w-full;
     /* Content Area Animation on Hover */
-    @apply hover:after:w-full;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:after:w-full;
   }
 
   .btn-yorha-primary {
@@ -186,7 +195,7 @@
     /* Content Area Animation Color */
     @apply after:bg-primary-950-50-token;
     /* Text Hover Color */
-    @apply hover:text-primary-50-950-token;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-primary-50-950-token;
   }
 
   .btn-yorha-secondary {
@@ -199,7 +208,7 @@
     /* Content Area Animation Color */
     @apply after:bg-secondary-950-50-token;
     /* Text Hover Color */
-    @apply hover:text-secondary-50-950-token;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-secondary-50-950-token;
   }
 
   .btn-yorha-tertiary {
@@ -212,7 +221,7 @@
     /* Content Area Animation Color */
     @apply after:bg-tertiary-950-50-token;
     /* Text Hover Color */
-    @apply hover:text-tertiary-50-950-token;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-tertiary-50-950-token;
   }
 
   .btn-yorha-success {
@@ -225,7 +234,7 @@
     /* Content Area Animation Color */
     @apply after:bg-success;
     /* Text Hover Color */
-    @apply hover:text-on-success-token;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-on-success-token;
   }
 
   .btn-yorha-warning {
@@ -238,7 +247,7 @@
     /* Content Area Animation Color */
     @apply after:bg-warning;
     /* Text Hover Color */
-    @apply hover:text-on-warning-token;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-on-warning-token;
   }
 
   .btn-yorha-error {
@@ -251,7 +260,7 @@
     /* Content Area Animation Color */
     @apply after:bg-error;
     /* Text Hover Color */
-    @apply hover:text-on-error-token;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-on-error-token;
   }
 
   .btn-yorha-info {
@@ -264,7 +273,7 @@
     /* Content Area Animation Color */
     @apply after:bg-info;
     /* Text Hover Color */
-    @apply hover:text-on-info-token;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-on-info-token;
   }
 
   .btn-yorha-on-success {
@@ -277,7 +286,7 @@
     /* Content Area Animation Color */
     @apply after:bg-on-success-token;
     /* Text Hover Color */
-    @apply hover:text-success;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-success;
   }
 
   .btn-yorha-on-warning {
@@ -290,7 +299,7 @@
     /* Content Area Animation Color */
     @apply after:bg-on-warning-token;
     /* Text Hover Color */
-    @apply hover:text-warning;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-warning;
   }
 
   .btn-yorha-on-error {
@@ -303,7 +312,7 @@
     /* Content Area Animation Color */
     @apply after:bg-on-error-token;
     /* Text Hover Color */
-    @apply hover:text-error;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-error;
   }
 
   .btn-yorha-on-info {
@@ -316,7 +325,7 @@
     /* Content Area Animation Color */
     @apply after:bg-on-info-token;
     /* Text Hover Color */
-    @apply hover:text-info;
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:text-info;
   }
 
   /* Circle Icon Button */
@@ -326,7 +335,7 @@
     /* Shadow */
     @apply shadow-base;
     /* Hover Brightness */
-    @apply hover:brightness-[1.15];
+    @apply hover:[&:not(*:disabled)]:[&:not(.btn-disabled)]:brightness-[1.15];
     /* Transitions */
     @apply transition-all;
   }
