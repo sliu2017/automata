@@ -7,6 +7,7 @@ The Automata Component Library contains a variety of classes that developers may
 - [Alerts](alerts.md)
 - [Badges](badges.md)
 - [Breadcrumbs](breadcrumbs.md)
+- [Button Groups](button-groups.md)
 - [Buttons](buttons.md)
 - [Cards](cards.md)
 - [Chips](chips.md)
