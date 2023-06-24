@@ -6,11 +6,9 @@
     /* Typography */
     @apply whitespace-nowrap stroke-base text-center text-base font-base tracking-base font-token text-transform-token;
     /* Borders */
-    @apply rounded-base border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
+    @apply border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
     /* Flex Columns */
     @apply inline-flex items-center justify-center space-x-2;
-    /* Padding */
-    @apply px-5 py-2;
     /* Appearance */
     @apply appearance-none;
   }
@@ -18,6 +16,21 @@
   /* ----- Button ----- */
   .btn {
     @apply button-base-styles;
+    /* Borders */
+    @apply rounded-base;
+    /* Padding */
+    @apply px-5 py-2;
+  }
+
+  /* ----- Icon Button ----- */
+  .btn-icon {
+    @apply button-base-styles;
+    /* Borders */
+    @apply rounded-none;
+    /* Padding */
+    @apply p-0;
+    /* Dimensions */
+    @apply aspect-square w-10;
   }
 
   /* ----- Button Sizes ----- */
@@ -33,10 +46,24 @@
     @apply px-9 py-4 text-xl;
   }
 
-  /* ----- Variants ----- */
+  /* ----- Icon Button Sizes ----- */
+  .btn-icon-sm {
+    @apply w-7 text-sm;
+  }
+
+  .btn-icon-lg {
+    @apply w-[3.25rem] text-lg;
+  }
+
+  .btn-icon-xl {
+    @apply w-[3.75rem] text-xl;
+  }
+
+  /* ----- Button Variants ----- */
 
   /* Standard */
-  .btn-standard {
+  .btn-standard,
+  .btn-icon-standard {
     /* Shadow */
     @apply shadow-base;
     /* Hover Brightness */
@@ -45,84 +72,95 @@
     @apply transition-all;
   }
 
-  .btn-standard-primary {
+  .btn-standard-primary,
+  .btn-icon-standard-primary {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply bg-primary-950-50-token text-primary-50-950-token;
   }
 
-  .btn-standard-secondary {
+  .btn-standard-secondary,
+  .btn-icon-standard-secondary {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply bg-secondary-950-50-token text-secondary-50-950-token;
   }
 
-  .btn-standard-tertiary {
+  .btn-standard-tertiary,
+  .btn-icon-standard-tertiary {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
   }
 
-  .btn-standard-success {
+  .btn-standard-success,
+  .btn-icon-standard-success {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply bg-success text-on-success-token;
   }
 
-  .btn-standard-warning {
+  .btn-standard-warning,
+  .btn-icon-standard-warning {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply bg-warning text-on-warning-token;
   }
 
-  .btn-standard-error {
+  .btn-standard-error,
+  .btn-icon-standard-error {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply bg-error text-on-error-token;
   }
 
-  .btn-standard-info {
+  .btn-standard-info,
+  .btn-icon-standard-info {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply bg-info text-on-info-token;
   }
 
-  .btn-standard-on-success {
+  .btn-standard-on-success,
+  .btn-icon-standard-on-success {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply text-success bg-on-success-token;
   }
 
-  .btn-standard-on-warning {
+  .btn-standard-on-warning,
+  .btn-icon-standard-on-warning {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply text-warning bg-on-warning-token;
   }
 
-  .btn-standard-on-error {
+  .btn-standard-on-error,
+  .btn-icon-standard-on-error {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply text-error bg-on-error-token;
   }
 
-  .btn-standard-on-info {
+  .btn-standard-on-info,
+  .btn-icon-standard-on-info {
     /* Standard Styles */
     @apply btn-standard;
     /* Color */
     @apply text-info bg-on-info-token;
   }
 
-  /* YoRHa */
+  /* YoRHa Button */
   .btn-yorha {
     /* Content Area */
     @apply relative z-0 transition-all;
@@ -279,5 +317,94 @@
     @apply after:bg-on-info-token;
     /* Text Hover Color */
     @apply hover:text-info;
+  }
+
+  /* Circle Icon Button */
+  .btn-icon-circle {
+    /* Borders */
+    @apply rounded-full;
+    /* Shadow */
+    @apply shadow-base;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  .btn-icon-circle-primary {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply bg-primary-950-50-token text-primary-50-950-token;
+  }
+
+  .btn-icon-circle-secondary {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply bg-secondary-950-50-token text-secondary-50-950-token;
+  }
+
+  .btn-icon-circle-tertiary {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
+  }
+
+  .btn-icon-circle-success {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply bg-success text-on-success-token;
+  }
+
+  .btn-icon-circle-warning {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply bg-warning text-on-warning-token;
+  }
+
+  .btn-icon-circle-error {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply bg-error text-on-error-token;
+  }
+
+  .btn-icon-circle-info {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply bg-info text-on-info-token;
+  }
+
+  .btn-icon-circle-on-success {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply text-success bg-on-success-token;
+  }
+
+  .btn-icon-circle-on-warning {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply text-warning bg-on-warning-token;
+  }
+
+  .btn-icon-circle-on-error {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply text-error bg-on-error-token;
+  }
+
+  .btn-icon-circle-on-info {
+    /* Circle Styles */
+    @apply btn-icon-circle;
+    /* Color */
+    @apply text-info bg-on-info-token;
   }
 }
