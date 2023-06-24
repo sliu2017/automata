@@ -54,7 +54,7 @@ The `.kbd` class is equivalent to the following:
 
 ```html
 <kbd
-  class="border border-primary-200/70 bg-primary-100/70 p-0.5 font-sans text-sm font-bold ring-1 ring-primary-300/70 text-primary-900-100-token dark:border-primary-800/70 dark:bg-primary-900/70 dark:ring-primary-700/70"
+  class="rounded border bg-primary-950 p-[1px] font-sans text-sm font-bold text-primary-50-950-token dark:bg-primary-50"
 >
   kbd (kbd)
 </kbd>
