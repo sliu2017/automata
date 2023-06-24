@@ -58,6 +58,25 @@
       btnYorha: 'btn-yorha-on-info',
     },
   ]
+
+  const sizes = [
+    {
+      label: 'Small',
+      btnSize: 'btn-sm',
+    },
+    {
+      label: 'Normal',
+      btnSize: '',
+    },
+    {
+      label: 'Large',
+      btnSize: 'btn-lg',
+    },
+    {
+      label: 'Extra Large',
+      btnSize: 'btn-xl',
+    },
+  ]
 </script>
 
 <h1 class="h1">Buttons</h1>
@@ -191,4 +210,16 @@
       {/each}
     </div>
   </div>
+</div>
+<h2 class="h2">Icon Buttons</h2>
+<h2 class="h2">Button Sizes</h2>
+<div class="grid grid-cols-2 gap-4">
+  {#each sizes as size}
+    <button class="btn btn-standard-primary {size.btnSize}">
+      {size.label}
+    </button>
+    <button class="btn btn-yorha-primary {size.btnSize}">
+      {size.label}
+    </button>
+  {/each}
 </div>
