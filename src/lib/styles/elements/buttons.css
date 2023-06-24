@@ -2,14 +2,11 @@
 
 @layer components {
   /* ----- Button States ----- */
-
   .button-base-styles {
     /* Typography */
     @apply whitespace-nowrap stroke-base text-center text-base font-base tracking-base font-token text-transform-token;
     /* Borders */
     @apply rounded-base border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
-    /* Shadow */
-    @apply shadow-base;
     /* Flex Columns */
     @apply inline-flex items-center justify-center space-x-2;
     /* Padding */
@@ -24,102 +21,250 @@
   }
 
   /* ----- Variants ----- */
-  .btn-standard-primary {
-    /* Color */
-    @apply bg-primary-950-50-token text-primary-50-950-token;
+
+  /* Standard */
+  .btn-standard {
+    /* Shadow */
+    @apply shadow-base;
     /* Hover Brightness */
     @apply hover:brightness-[1.15];
     /* Transitions */
     @apply transition-all;
+  }
+
+  .btn-standard-primary {
+    /* Standard Styles */
+    @apply btn-standard;
+    /* Color */
+    @apply bg-primary-950-50-token text-primary-50-950-token;
   }
 
   .btn-standard-secondary {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply bg-secondary-950-50-token text-secondary-50-950-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 
   .btn-standard-tertiary {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 
   .btn-standard-success {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply bg-success text-on-success-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 
   .btn-standard-warning {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply bg-warning text-on-warning-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 
   .btn-standard-error {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply bg-error text-on-error-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 
   .btn-standard-info {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply bg-info text-on-info-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 
   .btn-standard-on-success {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply text-success bg-on-success-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 
   .btn-standard-on-warning {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply text-warning bg-on-warning-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 
   .btn-standard-on-error {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply text-error bg-on-error-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 
   .btn-standard-on-info {
+    /* Standard Styles */
+    @apply btn-standard;
     /* Color */
     @apply text-info bg-on-info-token;
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
+  }
+
+  /* YoRHa */
+  .btn-yorha {
+    /* Content Area */
+    @apply relative z-0 transition-all;
+    /* Border Lines */
+    @apply before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:w-0 before:border-y-2 before:transition-all before:duration-150 before:ease-out;
+    /* Content Area Animation */
+    @apply after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:z-[-1] after:w-0 after:transition-all after:duration-150 after:ease-out;
+    /* Content Area on Hover */
+    @apply hover:bg-transparent hover:shadow-base;
+    /* Border Lines on Hover */
+    @apply hover:before:bottom-[-4px] hover:before:top-[-4px] hover:before:w-full;
+    /* Content Area Animation on Hover */
+    @apply hover:after:w-full;
+  }
+
+  .btn-yorha-primary {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply bg-primary-50-950-token text-primary-950-50-token;
+    /* Border Lines Color */
+    @apply before:border-primary-950-50-token;
+    /* Content Area Animation Color */
+    @apply after:bg-primary-950-50-token;
+    /* Text Hover Color */
+    @apply hover:text-primary-50-950-token;
+  }
+
+  .btn-yorha-secondary {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply bg-secondary-50-950-token text-secondary-950-50-token;
+    /* Border Lines Color */
+    @apply before:border-secondary-950-50-token;
+    /* Content Area Animation Color */
+    @apply after:bg-secondary-950-50-token;
+    /* Text Hover Color */
+    @apply hover:text-secondary-50-950-token;
+  }
+
+  .btn-yorha-tertiary {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply bg-tertiary-50-950-token text-tertiary-950-50-token;
+    /* Border Lines Color */
+    @apply before:border-tertiary-950-50-token;
+    /* Content Area Animation Color */
+    @apply after:bg-tertiary-950-50-token;
+    /* Text Hover Color */
+    @apply hover:text-tertiary-50-950-token;
+  }
+
+  .btn-yorha-success {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply text-success bg-on-success-token;
+    /* Border Lines Color */
+    @apply before:border-success;
+    /* Content Area Animation Color */
+    @apply after:bg-success;
+    /* Text Hover Color */
+    @apply hover:text-on-success-token;
+  }
+
+  .btn-yorha-warning {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply text-warning bg-on-warning-token;
+    /* Border Lines Color */
+    @apply before:border-warning;
+    /* Content Area Animation Color */
+    @apply after:bg-warning;
+    /* Text Hover Color */
+    @apply hover:text-on-warning-token;
+  }
+
+  .btn-yorha-error {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply text-error bg-on-error-token;
+    /* Border Lines Color */
+    @apply before:border-error;
+    /* Content Area Animation Color */
+    @apply after:bg-error;
+    /* Text Hover Color */
+    @apply hover:text-on-error-token;
+  }
+
+  .btn-yorha-info {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply text-info bg-on-info-token;
+    /* Border Lines Color */
+    @apply before:border-info;
+    /* Content Area Animation Color */
+    @apply after:bg-info;
+    /* Text Hover Color */
+    @apply hover:text-on-info-token;
+  }
+
+  .btn-yorha-on-success {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply bg-success text-on-success-token;
+    /* Border Lines Color */
+    @apply before:border-on-success-token;
+    /* Content Area Animation Color */
+    @apply after:bg-on-success-token;
+    /* Text Hover Color */
+    @apply hover:text-success;
+  }
+
+  .btn-yorha-on-warning {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply bg-warning text-on-warning-token;
+    /* Border Lines Color */
+    @apply before:border-on-warning-token;
+    /* Content Area Animation Color */
+    @apply after:bg-on-warning-token;
+    /* Text Hover Color */
+    @apply hover:text-warning;
+  }
+
+  .btn-yorha-on-error {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply bg-error text-on-error-token;
+    /* Border Lines Color */
+    @apply before:border-on-error-token;
+    /* Content Area Animation Color */
+    @apply after:bg-on-error-token;
+    /* Text Hover Color */
+    @apply hover:text-error;
+  }
+
+  .btn-yorha-on-info {
+    /* YoRHa Styles */
+    @apply btn-yorha;
+    /* Color */
+    @apply bg-success text-on-info-token;
+    /* Border Lines Color */
+    @apply before:border-on-info-token;
+    /* Content Area Animation Color */
+    @apply after:bg-on-info-token;
+    /* Text Hover Color */
+    @apply hover:text-info;
   }
 }
