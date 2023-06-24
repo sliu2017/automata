@@ -319,7 +319,7 @@
     /* YoRHa Styles */
     @apply btn-yorha;
     /* Color */
-    @apply bg-success text-on-info-token;
+    @apply bg-info text-on-info-token;
     /* Border Lines Color */
     @apply before:border-on-info-token;
     /* Content Area Animation Color */
