@@ -2,7 +2,7 @@
 
 Horizontal and vertical dividers are implemented through the `.hr` and `.divider-vertical` classes respectively.
 
-## .hr
+## Horizontal Divider (.hr)
 
 To create a horizontal divider, apply the `.hr` class to the `hr` tag.
 
@@ -36,7 +36,7 @@ The `.hr` class is equivalent to the following:
 <hr class="mx-auto block border-t-[0.1rem] border-solid border-primary-300-700-token" />
 ```
 
-## .divider-vertical
+## Vertical Divider (.divider-vertical)
 
 To create a vertical divider, apply the `.divider-vertical` class to the `span` tag and add a height class.
 
