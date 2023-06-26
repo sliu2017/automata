@@ -143,7 +143,6 @@
       </div>
     </section>
   </div>
-
   <div class="card">
     <header class="card-header-yorha">YoRHa Variant</header>
     <section class="card-section-yorha flex flex-col gap-4">
@@ -340,7 +339,7 @@
     </section>
   </div>
 </div>
-<h2 class="h2 border-primary-950-50-token">Button Sizes</h2>
+<h2 class="h2 heading-banner border-primary-950-50-token">Button Sizes</h2>
 <div class="m-4 grid grid-cols-2 gap-4">
   <div class="card">
     <header class="card-header-yorha">Standard Button</header>
