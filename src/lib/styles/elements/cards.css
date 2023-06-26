@@ -1,0 +1,47 @@
+/* Stylesheet: cards.css */
+
+@layer components {
+  /* ----- Card ----- */
+  .card {
+    /* Background Color */
+    @apply bg-primary-200-800-token;
+    /* Text Color */
+    @apply text-primary-800-200-token;
+    /* Borders */
+    @apply rounded-container border-container outline-container outline-offset-container ring-container ring-offset-container border-container-token outline-container-token;
+    /* Shadow */
+    @apply shadow-container;
+  }
+
+  /* ----- Regions ----- */
+  .card-header {
+    @apply p-4 pb-2;
+  }
+
+  .card-header-yorha {
+    /* Background Color */
+    @apply bg-primary-800-200-token;
+    /* Text Color */
+    @apply text-primary-200-800-token;
+    /* Text Size */
+    @apply text-xl;
+    /* Padding */
+    @apply px-4 py-2;
+  }
+
+  .card-section {
+    @apply px-4 py-2;
+  }
+
+  .card-section-yorha {
+    @apply p-4;
+  }
+
+  .card-footer {
+    @apply p-4 pt-2;
+  }
+
+  .card-footer-yorha {
+    @apply px-4 pb-4;
+  }
+}
