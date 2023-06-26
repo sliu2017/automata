@@ -10,13 +10,13 @@ To create a horizontal divider, apply the `.hr` class to the `hr` tag.
 <hr class="hr" />
 ```
 
-To change its thickness, apply a top border width class marked with `!important`.
+To change its thickness, apply a top border width class marked with the important (`!`) modifier.
 
 ```html
 <hr class="hr !border-t-2" />
 ```
 
-To change its styling, apply a border style class marked with `!important`.
+To change its styling, apply a border style class marked with the important (`!`) modifier.
 
 ```html
 <hr class="hr !border-dashed" />
@@ -24,7 +24,7 @@ To change its styling, apply a border style class marked with `!important`.
 <hr class="hr !border-double" />
 ```
 
-To change its color, apply a border color class marked with `!important`.
+To change its color, apply a border color class marked with the important (`!`) modifier.
 
 ```html
 <hr class="hr !border-secondary-300-700-token" />
@@ -44,13 +44,13 @@ To create a vertical divider, apply the `.divider-vertical` class to the `span` 
 <span class="divider-vertical h-8" />
 ```
 
-To change its thickness, apply a left border width class marked with `!important`.
+To change its thickness, apply a left border width class marked with the important (`!`) modifier.
 
 ```html
 <span class="divider-vertical h-8 !border-l-2" />
 ```
 
-To change its styling, apply a border style class marked with `!important`.
+To change its styling, apply a border style class marked with the important (`!`) modifier.
 
 ```html
 <span class="divider-vertical h-8 !border-dashed" />
@@ -58,7 +58,7 @@ To change its styling, apply a border style class marked with `!important`.
 <span class="divider-vertical h-8 !border-double" />
 ```
 
-To change its color, apply a border color class marked with `!important`.
+To change its color, apply a border color class marked with the important (`!`) modifier.
 
 ```html
 <span class="divider-vertical h-8 !border-secondary-300-700-token" />
