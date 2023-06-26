@@ -81,6 +81,15 @@ Alternatively, the `header`, `section`, and `footer` elements may be styled with
 </div>
 ```
 
+To change `.card-header-yorha` colors or shades, add background and text color classes with the important (`!`) modifier.
+
+```html
+<div class="card">
+  <header class="card-header-yorha !bg-success !text-primary-950">Header</header>
+  ...
+</div>
+```
+
 The `.card-header-yorha` class contains the following styles:
 
 ```css
