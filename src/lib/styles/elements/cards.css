@@ -18,6 +18,14 @@
     @apply p-4 pb-2;
   }
 
+  .card-section {
+    @apply px-4 py-2;
+  }
+
+  .card-footer {
+    @apply p-4 pt-2;
+  }
+
   .card-header-yorha {
     /* Background Color */
     @apply bg-primary-800-200-token;
@@ -29,16 +37,8 @@
     @apply px-4 py-2;
   }
 
-  .card-section {
-    @apply px-4 py-2;
-  }
-
   .card-section-yorha {
     @apply p-4;
-  }
-
-  .card-footer {
-    @apply p-4 pt-2;
   }
 
   .card-footer-yorha {

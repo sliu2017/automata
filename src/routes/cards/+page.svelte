@@ -7,7 +7,7 @@
     Card
   </div>
 </div>
-<h2 class="h2 heading-banner border-primary-950-50-token">Cards with Regions</h2>
+<h3 class="h3 heading-banner border-primary-950-50-token">Cards with Regions</h3>
 <div class="card m-4">
   <header class="card-header">
     <div
@@ -31,7 +31,7 @@
     </div>
   </footer>
 </div>
-<h2 class="h2 heading-banner border-primary-950-50-token">Cards with YoRHa Regions</h2>
+<h3 class="h3 heading-banner border-primary-950-50-token">Cards with YoRHa Regions</h3>
 <div class="card m-4">
   <header class="card-header-yorha">Header</header>
   <section class="card-section-yorha">
