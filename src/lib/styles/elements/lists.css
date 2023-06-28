@@ -1,0 +1,48 @@
+/* Stylesheet: lists.css */
+
+@layer components {
+  /* ----- List ----- */
+  .list {
+    @apply list-none indent-base;
+  }
+
+  /* ----- Unordered List ----- */
+  .list-ul {
+    @apply list-inside list-disc indent-base;
+  }
+
+  /* ----- Ordered List ----- */
+  .list-ol {
+    @apply list-inside list-decimal indent-base;
+  }
+
+  /* ----- Description List ----- */
+  .list-dl-color {
+    @apply indent-base;
+  }
+
+  .list-dl-color dd {
+    @apply text-primary-700-300-token;
+  }
+
+  .list-dl-indent {
+    @apply indent-base;
+  }
+
+  .list-dl-indent dd {
+    @apply list-indent-1;
+  }
+
+  /* ----- List Indents ----- */
+  .list-indent-1 {
+    text-indent: calc(var(--indent) + 16px);
+  }
+
+  .list-indent-2 {
+    text-indent: calc(var(--indent) + 32px);
+  }
+
+  .list-indent-3 {
+    text-indent: calc(var(--indent) + 48px);
+  }
+}
