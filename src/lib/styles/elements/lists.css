@@ -45,4 +45,12 @@
   .list-indent-3 {
     text-indent: calc(var(--indent) + 48px);
   }
+
+  .list-indent-4 {
+    text-indent: calc(var(--indent) + 64px);
+  }
+
+  .list-indent-5 {
+    text-indent: calc(var(--indent) + 80px);
+  }
 }
