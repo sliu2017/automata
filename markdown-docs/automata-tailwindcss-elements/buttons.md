@@ -87,7 +87,7 @@ The `.btn-xl` class contains the following styles:
 
 ### Button Variants
 
-Buttons come with two variant style classes, Standard (.btn-standard) and YoRHa (.btn-yorha).
+Buttons come with two variant style classes, Standard (`.btn-standard`) and YoRHa (`.btn-yorha`).
 
 #### Standard (.btn-standard)
 
