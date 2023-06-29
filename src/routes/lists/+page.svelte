@@ -55,9 +55,22 @@
 </div>
 <h2 class="h2 heading-banner border-primary-950-50-token">Description List</h2>
 <div class="card m-4">
+  <section class="card-section-yorha">
+    <dl class="list-dl">
+      <dt>Hot</dt>
+      <dd>Fire</dd>
+      <dt>Cross</dt>
+      <dd>X</dd>
+      <dt>Buns</dt>
+      <dd>Bread</dd>
+    </dl>
+  </section>
+</div>
+<h3 class="h3 heading-banner border-primary-950-50-token">Variants</h3>
+<div class="card m-4">
   <header class="card-header-yorha">Color</header>
   <section class="card-section-yorha">
-    <dl class="list-dl-color">
+    <dl class="list-dl list-dl-bright">
       <dt>Hot</dt>
       <dd>Fire</dd>
       <dt>Cross</dt>
@@ -70,7 +83,7 @@
 <div class="card m-4">
   <header class="card-header-yorha">Indent</header>
   <section class="card-section-yorha">
-    <dl class="list-dl-indent">
+    <dl class="list-dl list-dl-indent">
       <dt>Hot</dt>
       <dd>Fire</dd>
       <dt>Cross</dt>

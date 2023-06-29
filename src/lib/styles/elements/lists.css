@@ -17,16 +17,12 @@
   }
 
   /* ----- Description List ----- */
-  .list-dl-color {
+  .list-dl {
     @apply indent-base;
   }
 
-  .list-dl-color dd {
-    @apply text-primary-700-300-token;
-  }
-
-  .list-dl-indent {
-    @apply indent-base;
+  .list-dl-bright dd {
+    @apply brightness-75;
   }
 
   .list-dl-indent dd {
