@@ -1,5 +1,5 @@
 <h1 class="h1">Lists</h1>
-<h2 class="h2 heading-banner border-primary-950-50-token">List</h2>
+<h2 class="h2 heading-banner border-primary-950-50-token">Lists</h2>
 <div class="card m-4">
   <section class="card-section-yorha">
     <ul class="list">
@@ -17,7 +17,7 @@
     </ul>
   </section>
 </div>
-<h2 class="h2 heading-banner border-primary-950-50-token">Unordered List</h2>
+<h2 class="h2 heading-banner border-primary-950-50-token">Unordered Lists</h2>
 <div class="card m-4">
   <section class="card-section-yorha">
     <ul class="list-ul">
@@ -35,7 +35,7 @@
     </ul>
   </section>
 </div>
-<h2 class="h2 heading-banner border-primary-950-50-token">Ordered List</h2>
+<h2 class="h2 heading-banner border-primary-950-50-token">Ordered Lists</h2>
 <div class="card m-4">
   <section class="card-section-yorha">
     <ol class="list-ol">
@@ -53,7 +53,7 @@
     </ol>
   </section>
 </div>
-<h2 class="h2 heading-banner border-primary-950-50-token">Description List</h2>
+<h2 class="h2 heading-banner border-primary-950-50-token">Description Lists</h2>
 <div class="card m-4">
   <section class="card-section-yorha">
     <dl class="list-dl">
