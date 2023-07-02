@@ -1,0 +1,25 @@
+/* Stylesheet: buttons.css */
+
+@layer components {
+  /* ----- Breadcrumb ----- */
+  .breadcrumb {
+    @apply flex w-full items-center space-x-4 overflow-x-auto;
+  }
+
+  /* ----- Crumb ----- */
+  .crumb {
+    @apply flex items-center justify-center space-x-2 whitespace-nowrap;
+  }
+
+  /* ----- Crumb States ----- */
+
+  /* Disabled Crumb */
+  .crumb-disabled {
+    @apply !cursor-not-allowed !opacity-50;
+  }
+
+  /* Clickable Crumb */
+  .crumb-clickable {
+    @apply flex items-center justify-center space-x-2 whitespace-nowrap underline hover:[&:not(*:disabled)]:[&:not(.crumb-disabled)]:brightness-[1.15];
+  }
+}
