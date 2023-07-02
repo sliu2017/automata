@@ -11,6 +11,11 @@
     @apply flex items-center justify-center space-x-2 whitespace-nowrap;
   }
 
+  .crumb a,
+  .crumb button {
+    @apply flex items-center justify-center space-x-2 whitespace-nowrap;
+  }
+
   /* ----- Crumb States ----- */
 
   /* Disabled Crumb */
@@ -20,6 +25,6 @@
 
   /* Clickable Crumb */
   .crumb-clickable {
-    @apply flex items-center justify-center space-x-2 whitespace-nowrap underline hover:[&:not(*:disabled)]:[&:not(.crumb-disabled)]:brightness-[1.15];
+    @apply underline hover:[&:not(*:disabled)]:[&:not(.crumb-disabled)]:brightness-[1.15];
   }
 }
