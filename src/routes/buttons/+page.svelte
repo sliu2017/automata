@@ -111,7 +111,7 @@
   <div class="card">
     <header class="card-header-yorha">Standard Variant</header>
     <section class="card-section-yorha flex flex-col gap-4">
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
           <button class="btn {color.btnStandard}">
             Standard {color.label}
@@ -126,7 +126,7 @@
           </button>
         {/each}
       </div>
-      <div class="grid grid-cols-4 gap-4">
+      <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
           <button class="btn {alertColor.btnStandard}">
             Standard {alertColor.label}
@@ -146,7 +146,7 @@
   <div class="card">
     <header class="card-header-yorha">YoRHa Variant</header>
     <section class="card-section-yorha flex flex-col gap-4">
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
           <button class="btn {color.btnYorha}">
             YoRHa {color.label}
@@ -161,7 +161,7 @@
           </button>
         {/each}
       </div>
-      <div class="grid grid-cols-4 gap-4">
+      <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
           <button class="btn {alertColor.btnYorha}">
             YoRHa {alertColor.label}
@@ -184,7 +184,7 @@
   <div class="card">
     <header class="card-header-yorha">Standard Variant</header>
     <section class="card-section-yorha flex flex-col gap-4">
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
           <a class="btn {color.btnStandard}" href="https://www.google.com/">
             Standard {color.label}
@@ -199,7 +199,7 @@
           </a>
         {/each}
       </div>
-      <div class="grid grid-cols-4 gap-4">
+      <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
           <a class="btn {alertColor.btnStandard}" href="https://www.google.com/">
             Standard {alertColor.label}
@@ -219,7 +219,7 @@
   <div class="card">
     <header class="card-header-yorha">YoRHa Variant</header>
     <section class="card-section-yorha flex flex-col gap-4">
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
           <a class="btn {color.btnYorha}" href="https://www.google.com/">
             YoRHa {color.label}
@@ -234,7 +234,7 @@
           </a>
         {/each}
       </div>
-      <div class="grid grid-cols-4 gap-4">
+      <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
           <a class="btn {alertColor.btnYorha}" href="https://www.google.com/">
             YoRHa {alertColor.label}
