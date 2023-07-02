@@ -15,7 +15,7 @@
     /* Typography */
     @apply whitespace-nowrap stroke-base text-center text-base font-base tracking-base font-token text-transform-token;
     /* Borders */
-    @apply border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
+    @apply rounded-base border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
     /* Flex Columns */
     @apply inline-flex items-center justify-center space-x-2;
     /* Appearance */
@@ -25,8 +25,6 @@
   /* ----- Button ----- */
   .btn {
     @apply btn-base-styles;
-    /* Borders */
-    @apply rounded-base;
     /* Padding */
     @apply px-5 py-2;
   }
@@ -34,8 +32,6 @@
   /* ----- Icon Button ----- */
   .btn-icon {
     @apply btn-base-styles;
-    /* Borders */
-    @apply rounded-none;
     /* Padding */
     @apply p-0;
     /* Dimensions */
