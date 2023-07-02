@@ -1,0 +1,251 @@
+/* Stylesheet: badges.css */
+
+@layer components {
+  /* ----- Base ----- */
+  .badge-base-styles {
+    /* Typography */
+    @apply whitespace-nowrap stroke-base text-base font-base tracking-base font-token text-transform-token;
+    /* Borders */
+    @apply rounded-base border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
+    /* Flex */
+    @apply items-center justify-center space-x-2;
+  }
+
+  /* ----- Badge ----- */
+  .badge {
+    @apply badge-base-styles;
+    /* Padding */
+    @apply px-1.5 py-0.5;
+    /* Flex */
+    @apply inline-flex;
+  }
+
+  /* ----- Icon Badge ----- */
+  .badge-icon {
+    @apply badge-base-styles;
+    /* Padding */
+    @apply p-0;
+    /* Dimensions */
+    @apply aspect-square w-7;
+    /* Flex */
+    @apply flex;
+  }
+
+  /*
+
+  /* ----- Badge Sizes ----- */
+  .badge-xs {
+    @apply p-0.5 py-0 text-xs;
+  }
+
+  .badge-sm {
+    @apply px-1 py-px text-sm;
+  }
+
+  .badge-lg {
+    @apply px-2 py-1 text-lg;
+  }
+
+  .badge-xl {
+    @apply px-2.5 py-1.5 text-xl;
+  }
+
+  /* ----- Icon Badge Sizes ----- */
+  .badge-icon-xs {
+    @apply w-5 text-xs;
+  }
+
+  .badge-icon-sm {
+    @apply w-6 text-sm;
+  }
+
+  .badge-icon-lg {
+    @apply w-8 text-lg;
+  }
+
+  .badge-icon-xl {
+    @apply w-9 text-xl;
+  }
+
+  /* ----- Badge Variants ----- */
+
+  /* Standard */
+  .badge-standard,
+  .badge-icon-standard {
+    /* Shadow */
+    @apply shadow-base;
+  }
+
+  .badge-standard-primary,
+  .badge-icon-standard-primary {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply bg-primary-950-50-token text-primary-50-950-token;
+  }
+
+  .badge-standard-secondary,
+  .badge-icon-standard-secondary {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply bg-secondary-950-50-token text-secondary-50-950-token;
+  }
+
+  .badge-standard-tertiary,
+  .badge-icon-standard-tertiary {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
+  }
+
+  .badge-standard-success,
+  .badge-icon-standard-success {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply bg-success text-on-success-token;
+  }
+
+  .badge-standard-warning,
+  .badge-icon-standard-warning {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply bg-warning text-on-warning-token;
+  }
+
+  .badge-standard-error,
+  .badge-icon-standard-error {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply bg-error text-on-error-token;
+  }
+
+  .badge-standard-info,
+  .badge-icon-standard-info {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply bg-info text-on-info-token;
+  }
+
+  .badge-standard-on-success,
+  .badge-icon-standard-on-success {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply text-success bg-on-success-token;
+  }
+
+  .badge-standard-on-warning,
+  .badge-icon-standard-on-warning {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply text-warning bg-on-warning-token;
+  }
+
+  .badge-standard-on-error,
+  .badge-icon-standard-on-error {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply text-error bg-on-error-token;
+  }
+
+  .badge-standard-on-info,
+  .badge-icon-standard-on-info {
+    /* Standard Styles */
+    @apply badge-standard;
+    /* Color */
+    @apply text-info bg-on-info-token;
+  }
+
+  /* Circle Icon Button */
+  .badge-icon-circle {
+    /* Borders */
+    @apply rounded-full;
+    /* Shadow */
+    @apply shadow-base;
+  }
+
+  .badge-icon-circle-primary {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply bg-primary-950-50-token text-primary-50-950-token;
+  }
+
+  .badge-icon-circle-secondary {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply bg-secondary-950-50-token text-secondary-50-950-token;
+  }
+
+  .badge-icon-circle-tertiary {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
+  }
+
+  .badge-icon-circle-success {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply bg-success text-on-success-token;
+  }
+
+  .badge-icon-circle-warning {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply bg-warning text-on-warning-token;
+  }
+
+  .badge-icon-circle-error {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply bg-error text-on-error-token;
+  }
+
+  .badge-icon-circle-info {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply bg-info text-on-info-token;
+  }
+
+  .badge-icon-circle-on-success {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply text-success bg-on-success-token;
+  }
+
+  .badge-icon-circle-on-warning {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply text-warning bg-on-warning-token;
+  }
+
+  .badge-icon-circle-on-error {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply text-error bg-on-error-token;
+  }
+
+  .badge-icon-circle-on-info {
+    /* Circle Styles */
+    @apply badge-icon-circle;
+    /* Color */
+    @apply text-info bg-on-info-token;
+  }
+}
