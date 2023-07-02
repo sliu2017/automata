@@ -15,7 +15,7 @@
   .badge {
     @apply badge-base-styles;
     /* Padding */
-    @apply px-1.5 py-0.5;
+    @apply px-2 py-0.5;
     /* Flex */
     @apply inline-flex;
   }
@@ -35,19 +35,19 @@
 
   /* ----- Badge Sizes ----- */
   .badge-xs {
-    @apply p-0.5 py-0 text-xs;
+    @apply px-1 py-0 text-xs;
   }
 
   .badge-sm {
-    @apply px-1 py-px text-sm;
+    @apply px-1.5 py-px text-sm;
   }
 
   .badge-lg {
-    @apply px-2 py-1 text-lg;
+    @apply px-2.5 py-1 text-lg;
   }
 
   .badge-xl {
-    @apply px-2.5 py-1.5 text-xl;
+    @apply px-3 py-1.5 text-xl;
   }
 
   /* ----- Icon Badge Sizes ----- */
