@@ -1,0 +1,223 @@
+/* Stylesheet: chips.css */
+
+@layer components {
+  /* ----- Chip States ----- */
+
+  .chip-disabled {
+    @apply !cursor-not-allowed !opacity-50;
+  }
+
+  .chip-base-styles {
+    /* Typography */
+    @apply whitespace-nowrap text-center;
+    /* Borders */
+    @apply rounded-base border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
+    /* Flex */
+    @apply inline-flex items-center justify-center space-x-2;
+    /* Padding */
+    @apply px-3 py-1.5;
+  }
+
+  /* ----- Chip ----- */
+  .chip {
+    @apply chip-base-styles;
+  }
+
+  /* ----- Interactive Chip ----- */
+  .chip-interactive {
+    @apply chip-base-styles;
+    /* Cursor */
+    @apply cursor-pointer;
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  /* ----- Chip Sizes ----- */
+  .chip-xs {
+    @apply text-xs;
+  }
+
+  .chip-sm {
+    @apply text-sm;
+  }
+
+  .chip-lg {
+    @apply text-lg;
+  }
+
+  .chip-xl {
+    @apply text-xl;
+  }
+
+  /* ----- Chip Variants ----- */
+
+  /* Standard */
+  .chip-standard {
+    /* Shadow */
+    @apply shadow-base;
+  }
+
+  .chip-standard-primary {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply bg-primary-950-50-token text-primary-50-950-token;
+  }
+
+  .chip-standard-secondary {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply bg-secondary-950-50-token text-secondary-50-950-token;
+  }
+
+  .chip-standard-tertiary {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
+  }
+
+  .chip-standard-success {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply bg-success text-on-success-token;
+  }
+
+  .chip-standard-warning {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply bg-warning text-on-warning-token;
+  }
+
+  .chip-standard-error {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply bg-error text-on-error-token;
+  }
+
+  .chip-standard-info {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply bg-info text-on-info-token;
+  }
+
+  .chip-standard-on-success {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply text-success bg-on-success-token;
+  }
+
+  .chip-standard-on-warning {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply text-warning bg-on-warning-token;
+  }
+
+  .chip-standard-on-error {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply text-error bg-on-error-token;
+  }
+
+  .chip-standard-on-info {
+    /* Standard Styles */
+    @apply chip-standard;
+    /* Color */
+    @apply text-info bg-on-info-token;
+  }
+
+  /* Rounded */
+  .chip-rounded {
+    /* Borders */
+    @apply rounded-full;
+    /* Shadow */
+    @apply shadow-base;
+  }
+
+  .chip-rounded-primary {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply bg-primary-950-50-token text-primary-50-950-token;
+  }
+
+  .chip-rounded-secondary {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply bg-secondary-950-50-token text-secondary-50-950-token;
+  }
+
+  .chip-rounded-tertiary {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
+  }
+
+  .chip-rounded-success {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply bg-success text-on-success-token;
+  }
+
+  .chip-rounded-warning {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply bg-warning text-on-warning-token;
+  }
+
+  .chip-rounded-error {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply bg-error text-on-error-token;
+  }
+
+  .chip-rounded-info {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply bg-info text-on-info-token;
+  }
+
+  .chip-rounded-on-success {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply text-success bg-on-success-token;
+  }
+
+  .chip-rounded-on-warning {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply text-warning bg-on-warning-token;
+  }
+
+  .chip-rounded-on-error {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply text-error bg-on-error-token;
+  }
+
+  .chip-rounded-on-info {
+    /* Standard Styles */
+    @apply chip-rounded;
+    /* Color */
+    @apply text-info bg-on-info-token;
+  }
+}
