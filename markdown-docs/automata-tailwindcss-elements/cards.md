@@ -6,7 +6,7 @@ The class is typically added to `div` tags with the intention of separating its 
 
 ## Card (.card)
 
-To create a card, apply the `.card` class to a `.div` or any similar tag.
+To create a card, apply the `.card` class to a `div` or any similar tag.
 
 ```html
 <div class="card">Card</div>
