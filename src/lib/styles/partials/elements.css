@@ -1,6 +1,7 @@
 /* Stylesheet: elements.css */
 
 /* Tailwind Elements */
+@import '../elements/alerts.css';
 @import '../elements/badges.css';
 @import '../elements/breadcrumbs.css';
 @import '../elements/buttons.css';
