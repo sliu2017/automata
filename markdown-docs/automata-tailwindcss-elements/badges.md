@@ -19,7 +19,7 @@ Both `.badge` and `.badge-icon` apply a shared set of styles called `.badge-base
 
 ## Badge (.badge)
 
-To create a badge with base badge styles (`.badge-base-styles`) and badge (`.badge`) specific styles, apply the `.badge` class to an `span` or `div` tag.
+To create a badge with base badge styles (`.badge-base-styles`) and badge (`.badge`) specific styles, apply the `.badge` class to a `span` or `div` tag.
 
 The following contains only text:
 
@@ -56,28 +56,13 @@ To change the preset size of a badge, apply a `.badge-xs`, `.badge-sm`, `.badge-
 
 ```html
 <span class="badge badge-xs">Extra Small Badge</span>
-<span class="badge badge-sm">Small Badge</span>
-<span class="badge badge-lg">Large Badge</span>
-<span class="badge badge-xl">Extra Large Badge</span>
-
-<div class="badge badge-xs">
-  <span>
-    <i class="fa-solid fa-robot" />
-  </span>
-  <span>Extra Small Badge</span>
-</div>
 <div class="badge badge-sm">
   <span>
     <i class="fa-solid fa-robot" />
   </span>
   <span>Small Badge</span>
 </div>
-<div class="badge badge-lg">
-  <span>
-    <i class="fa-solid fa-robot" />
-  </span>
-  <span>Large Badge</span>
-</div>
+<span class="badge badge-lg">Large Badge</span>
 <div class="badge badge-xl">
   <span>
     <i class="fa-solid fa-robot" />

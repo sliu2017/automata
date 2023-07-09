@@ -145,77 +145,77 @@
   }
 
   .chip-rounded-primary {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply bg-primary-950-50-token text-primary-50-950-token;
   }
 
   .chip-rounded-secondary {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply bg-secondary-950-50-token text-secondary-50-950-token;
   }
 
   .chip-rounded-tertiary {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply bg-tertiary-950-50-token text-tertiary-50-950-token;
   }
 
   .chip-rounded-success {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply bg-success text-on-success-token;
   }
 
   .chip-rounded-warning {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply bg-warning text-on-warning-token;
   }
 
   .chip-rounded-error {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply bg-error text-on-error-token;
   }
 
   .chip-rounded-info {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply bg-info text-on-info-token;
   }
 
   .chip-rounded-on-success {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply text-success bg-on-success-token;
   }
 
   .chip-rounded-on-warning {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply text-warning bg-on-warning-token;
   }
 
   .chip-rounded-on-error {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply text-error bg-on-error-token;
   }
 
   .chip-rounded-on-info {
-    /* Standard Styles */
+    /* Rounded Styles */
     @apply chip-rounded;
     /* Color */
     @apply text-info bg-on-info-token;

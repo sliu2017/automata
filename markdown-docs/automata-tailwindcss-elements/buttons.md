@@ -494,7 +494,7 @@ The `.btn-icon-circle-on-{alertColor}` class contains the following styles:
 
 ## Disabled Buttons
 
-To disable a button or an icon button, add the `disabled` attribute to the `button` element. This will apply the `.btn-disabled` class which will apply a set of styles and disable other button styles. The `btn-disabled` class may also be used to force an element to show the disabled state.
+To disable a button or an icon button, add the `disabled` attribute to the `button` element. This will apply the `.btn-disabled` class which will apply a set of styles and disable other button styles. The `.btn-disabled` class may also be used to force an element to show the disabled state.
 
 The `.btn-disabled` class contains the following styles:
 
