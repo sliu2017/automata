@@ -26,7 +26,7 @@ The `.breadcrumb` class contains the following styles:
 
 ```css
 .breadcrumb {
-  @apply flex w-full items-center space-x-4 overflow-x-auto;
+  @apply flex w-full items-center gap-4 overflow-x-auto;
 }
 ```
 
@@ -90,12 +90,12 @@ The `.crumb` class applies the following styles:
 
 ```css
 .crumb {
-  @apply flex items-center justify-center space-x-2 whitespace-nowrap;
+  @apply flex items-center justify-center gap-2 whitespace-nowrap;
 }
 
 .crumb a,
 .crumb button {
-  @apply flex items-center justify-center space-x-2 whitespace-nowrap;
+  @apply flex items-center justify-center gap-2 whitespace-nowrap;
 }
 ```
 
@@ -121,7 +121,7 @@ The `.crumb-clickable` class contains the following styles:
 
 ```css
 .crumb-clickable {
-  @apply flex items-center justify-center space-x-2 whitespace-nowrap underline hover:[&:not(*:disabled)]:[&:not(.crumb-disabled)]:brightness-[1.15];
+  @apply flex items-center justify-center gap-2 whitespace-nowrap underline hover:[&:not(*:disabled)]:[&:not(.crumb-disabled)]:brightness-[1.15];
 }
 ```
 

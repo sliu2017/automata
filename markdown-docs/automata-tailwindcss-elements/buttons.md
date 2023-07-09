@@ -13,7 +13,7 @@ Both `.btn` and `.btn-icon` apply a shared set of styles called `.btn-base-style
   /* Borders */
   @apply border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
   /* Flex Columns */
-  @apply inline-flex items-center justify-center space-x-2;
+  @apply inline-flex items-center justify-center gap-2;
   /* Appearance */
   @apply appearance-none;
 }

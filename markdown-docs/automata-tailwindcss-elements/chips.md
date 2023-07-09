@@ -13,7 +13,7 @@ Both `.chip` and `.chip-interactive` apply a shared set of styles called `.chip-
   /* Borders */
   @apply rounded-base border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
   /* Flex */
-  @apply inline-flex items-center justify-center space-x-2;
+  @apply inline-flex items-center justify-center gap-2;
   /* Padding */
   @apply px-3 py-1.5;
 }

@@ -3,17 +3,17 @@
 @layer components {
   /* ----- Breadcrumb ----- */
   .breadcrumb {
-    @apply flex w-full items-center space-x-4 overflow-x-auto;
+    @apply flex w-full items-center gap-4 overflow-x-auto;
   }
 
   /* ----- Crumb ----- */
   .crumb {
-    @apply flex items-center justify-center space-x-2 whitespace-nowrap;
+    @apply flex items-center justify-center gap-2 whitespace-nowrap;
   }
 
   .crumb a,
   .crumb button {
-    @apply flex items-center justify-center space-x-2 whitespace-nowrap;
+    @apply flex items-center justify-center gap-2 whitespace-nowrap;
   }
 
   /* ----- Crumb States ----- */

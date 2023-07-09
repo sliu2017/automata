@@ -13,7 +13,7 @@ Both `.badge` and `.badge-icon` apply a shared set of styles called `.badge-base
   /* Borders */
   @apply rounded-base border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
   /* Flex */
-  @apply items-center justify-center space-x-2;
+  @apply items-center justify-center gap-2;
 }
 ```
 
