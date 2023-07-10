@@ -69,7 +69,7 @@ The `.alert-actions` class contains the following styles:
 
 ```css
 .alert-actions {
-  @apply flex flex-none items-center gap-2;
+  @apply flex flex-none flex-nowrap items-center gap-2;
 }
 ```
 
