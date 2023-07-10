@@ -11,6 +11,7 @@ const timesExtendedTheme = require('./theme/times-extended.cjs')
 /* Token Modules */
 const backgroundTokens = require('./tokens/backgrounds.cjs')
 const borderTokens = require('./tokens/borders.cjs')
+const btTokens = require('./tokens/bt.cjs')
 const effectTokens = require('./tokens/effects.cjs')
 const interactivityTokens = require('./tokens/interactivity.cjs')
 const svgTokens = require('./tokens/svg.cjs')
@@ -21,6 +22,7 @@ module.exports = plugin(
     addUtilities({
       ...backgroundTokens(),
       ...borderTokens(),
+      ...btTokens(),
       ...effectTokens(),
       ...interactivityTokens(),
       ...svgTokens(),
