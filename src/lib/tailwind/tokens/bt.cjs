@@ -21,6 +21,7 @@ module.exports = () => {
         '--tw-text-opacity': '1',
         color: `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-text-opacity))`,
         fill: `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-text-opacity))`,
+        stroke: `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-text-opacity))`,
         'text-decoration-color': `rgb(var(--color-${colorName}-${colorPairing.dark}))`,
       }
       btClasses[`.dark .bt-${colorName}-${colorPairing.light}-${colorPairing.dark}-token`] = {
@@ -28,6 +29,7 @@ module.exports = () => {
         '--tw-text-opacity': '1',
         color: `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-text-opacity))`,
         fill: `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-text-opacity))`,
+        stroke: `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-text-opacity))`,
         'text-decoration-color': `rgb(var(--color-${colorName}-${colorPairing.light}))`,
       }
 
@@ -37,6 +39,7 @@ module.exports = () => {
         '--tw-text-opacity': '1',
         color: `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-text-opacity)) !important`,
         fill: `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-text-opacity)) !important`,
+        stroke: `rgb(var(--color-${colorName}-${colorPairing.light})/var(--tw-text-opacity)) !important`,
         'text-decoration-color': `rgb(var(--color-${colorName}-${colorPairing.light})) !important`,
       }
       btClasses[`.dark .bt-${colorName}-${colorPairing.light}-${colorPairing.dark}-active-token`] =
@@ -45,6 +48,7 @@ module.exports = () => {
           '--tw-text-opacity': '1',
           color: `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-text-opacity)) !important`,
           fill: `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-text-opacity)) !important`,
+          stroke: `rgb(var(--color-${colorName}-${colorPairing.dark})/var(--tw-text-opacity)) !important`,
           'text-decoration-color': `rgb(var(--color-${colorName}-${colorPairing.dark})) !important`,
         }
     })
@@ -59,6 +63,7 @@ module.exports = () => {
       '--tw-text-opacity': '1',
       color: `rgb(var(--on-${alertColorName})/var(--tw-text-opacity)) !important`,
       fill: `rgb(var(--on-${alertColorName})/var(--tw-text-opacity)) !important`,
+      stroke: `rgb(var(--on-${alertColorName})/var(--tw-text-opacity)) !important`,
       'text-decoration-color': `rgb(var(--on-${alertColorName})) !important`,
     }
     btClasses[`.bt-on-${alertColorName}-active-token`] = {
@@ -66,6 +71,7 @@ module.exports = () => {
       '--tw-text-opacity': '1',
       color: `rgb(var(--color-${alertColorName})/var(--tw-text-opacity)) !important`,
       fill: `rgb(var(--color-${alertColorName})/var(--tw-text-opacity)) !important`,
+      stroke: `rgb(var(--color-${alertColorName})/var(--tw-text-opacity)) !important`,
       'text-decoration-color': `rgb(var(--color-${alertColorName})) !important`,
     }
 
@@ -75,6 +81,7 @@ module.exports = () => {
       '--tw-text-opacity': '1',
       color: `rgb(var(--on-${alertColorName})/var(--tw-text-opacity))`,
       fill: `rgb(var(--on-${alertColorName})/var(--tw-text-opacity))`,
+      stroke: `rgb(var(--on-${alertColorName})/var(--tw-text-opacity))`,
       'text-decoration-color': `rgb(var(--on-${alertColorName}))`,
     }
 
@@ -84,6 +91,7 @@ module.exports = () => {
       '--tw-text-opacity': '1',
       color: `rgb(var(--color-${alertColorName})/var(--tw-text-opacity))`,
       fill: `rgb(var(--color-${alertColorName})/var(--tw-text-opacity))`,
+      stroke: `rgb(var(--color-${alertColorName})/var(--tw-text-opacity))`,
       'text-decoration-color': `rgb(var(--color-${alertColorName}))`,
     }
   })
