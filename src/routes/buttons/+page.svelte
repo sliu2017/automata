@@ -3,59 +3,59 @@
     {
       label: 'Primary',
       standard: 'bt-primary-950-50-token',
-      yorha: 'btn-yorha-primary',
+      yorha: 'yorha-primary-950-50-token',
     },
     {
       label: 'Secondary',
       standard: 'bt-secondary-950-50-token',
-      yorha: 'btn-yorha-secondary',
+      yorha: 'yorha-primary-950-50-token',
     },
     {
       label: 'Tertiary',
       standard: 'bt-tertiary-950-50-token',
-      yorha: 'btn-yorha-tertiary',
+      yorha: 'yorha-primary-950-50-token',
     },
   ]
   const alertColors = [
     {
       label: 'Success',
       standard: 'bt-success-token',
-      yorha: 'btn-yorha-success',
+      yorha: 'yorha-success-token',
     },
     {
       label: 'Warning',
       standard: 'bt-warning-token',
-      yorha: 'btn-yorha-warning',
+      yorha: 'yorha-warning-token',
     },
     {
       label: 'Error',
       standard: 'bt-error-token',
-      yorha: 'btn-yorha-error',
+      yorha: 'yorha-error-token',
     },
     {
       label: 'Info',
       standard: 'bt-info-token',
-      yorha: 'btn-yorha-info',
+      yorha: 'yorha-info-token',
     },
     {
       label: 'On Success',
       standard: 'bt-on-success-token',
-      yorha: 'btn-yorha-on-success',
+      yorha: 'yorha-on-success-token',
     },
     {
       label: 'On Warning',
       standard: 'bt-on-warning-token',
-      yorha: 'btn-yorha-on-warning',
+      yorha: 'yorha-on-warning-token',
     },
     {
       label: 'On Error',
       standard: 'bt-on-error-token',
-      yorha: 'btn-yorha-on-error',
+      yorha: 'yorha-on-error-token',
     },
     {
       label: 'On Info',
       standard: 'bt-on-info-token',
-      yorha: 'btn-yorha-on-info',
+      yorha: 'yorha-on-info-token',
     },
   ]
 
@@ -126,12 +126,12 @@
     <section class="card-section-yorha flex flex-col gap-4">
       <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
-          <button class="btn {color.yorha}">
+          <button class="btn btn-yorha {color.yorha}">
             YoRHa {color.label}
           </button>
         {/each}
         {#each colors as color}
-          <button class="btn {color.yorha}">
+          <button class="btn btn-yorha {color.yorha}">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -141,12 +141,12 @@
       </div>
       <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
-          <button class="btn {alertColor.yorha}">
+          <button class="btn btn-yorha {alertColor.yorha}">
             YoRHa {alertColor.label}
           </button>
         {/each}
         {#each alertColors as alertColor}
-          <button class="btn {alertColor.yorha}">
+          <button class="btn btn-yorha {alertColor.yorha}">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -199,12 +199,12 @@
     <section class="card-section-yorha flex flex-col gap-4">
       <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
-          <a class="btn {color.yorha}" href="https://www.google.com/">
+          <a class="btn btn-yorha {color.yorha}" href="https://www.google.com/">
             YoRHa {color.label}
           </a>
         {/each}
         {#each colors as color}
-          <a class="btn {color.yorha}" href="https://www.google.com/">
+          <a class="btn btn-yorha {color.yorha}" href="https://www.google.com/">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -214,12 +214,12 @@
       </div>
       <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
-          <a class="btn {alertColor.yorha}" href="https://www.google.com/">
+          <a class="btn btn-yorha {alertColor.yorha}" href="https://www.google.com/">
             YoRHa {alertColor.label}
           </a>
         {/each}
         {#each alertColors as alertColor}
-          <a class="btn {alertColor.yorha}" href="https://www.google.com/">
+          <a class="btn btn-yorha {alertColor.yorha}" href="https://www.google.com/">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -344,10 +344,10 @@
     <header class="card-header-yorha">YoRHa Button</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
       {#each sizes as size}
-        <button class="btn btn-yorha-primary {size.btnSize}">
+        <button class="btn btn-yorha yorha-primary-950-50-token {size.btnSize}">
           {size.label}
         </button>
-        <button class="btn btn-yorha-primary {size.btnSize}">
+        <button class="btn btn-yorha yorha-primary-950-50-token {size.btnSize}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -402,8 +402,8 @@
   <div class="card">
     <header class="card-header-yorha">Disabled YoRHa Button</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <button class="btn btn-yorha-primary" disabled>Disabled</button>
-      <button class="btn btn-yorha-primary" disabled>
+      <button class="btn btn-yorha yorha-primary-950-50-token" disabled>Disabled</button>
+      <button class="btn btn-yorha yorha-primary-950-50-token" disabled>
         <span>
           <i class="fa-solid fa-robot" />
         </span>
@@ -426,8 +426,8 @@
   <div class="card">
     <header class="card-header-yorha">YoRHa Button with Disabled Class</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <button class="btn btn-yorha-primary btn-disabled">Disabled Class</button>
-      <button class="btn btn-yorha-primary btn-disabled">
+      <button class="btn btn-yorha yorha-primary-950-50-token btn-disabled">Disabled Class</button>
+      <button class="btn btn-yorha yorha-primary-950-50-token btn-disabled">
         <span>
           <i class="fa-solid fa-robot" />
         </span>
