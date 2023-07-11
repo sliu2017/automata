@@ -16,6 +16,7 @@ const effectTokens = require('./tokens/effects.cjs')
 const interactivityTokens = require('./tokens/interactivity.cjs')
 const svgTokens = require('./tokens/svg.cjs')
 const typographyTokens = require('./tokens/typography.cjs')
+const yorhaTokens = require('./tokens/yorha.cjs')
 
 module.exports = plugin(
   ({addUtilities}) => {
@@ -27,6 +28,7 @@ module.exports = plugin(
       ...interactivityTokens(),
       ...svgTokens(),
       ...typographyTokens(),
+      ...yorhaTokens(),
     })
   },
   {
