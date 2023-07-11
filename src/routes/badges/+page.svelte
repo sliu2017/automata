@@ -2,71 +2,49 @@
   const colors = [
     {
       label: 'Primary',
-      badgeStandard: 'badge-standard-primary',
-      badgeIconStandard: 'badge-icon-standard-primary',
-      badgeIconCircle: 'badge-icon-circle-primary',
+      standard: 'bt-primary-950-50-token',
     },
     {
       label: 'Secondary',
-      badgeStandard: 'badge-standard-secondary',
-      badgeIconStandard: 'badge-icon-standard-secondary',
-      badgeIconCircle: 'badge-icon-circle-secondary',
+      standard: 'bt-secondary-950-50-token',
     },
     {
       label: 'Tertiary',
-      badgeStandard: 'badge-standard-tertiary',
-      badgeIconStandard: 'badge-icon-standard-tertiary',
-      badgeIconCircle: 'badge-icon-circle-tertiary',
+      standard: 'bt-tertiary-950-50-token',
     },
   ]
   const alertColors = [
     {
       label: 'Success',
-      badgeStandard: 'badge-standard-success',
-      badgeIconStandard: 'badge-icon-standard-success',
-      badgeIconCircle: 'badge-icon-circle-success',
+      standard: 'bt-success-token',
     },
     {
       label: 'Warning',
-      badgeStandard: 'badge-standard-warning',
-      badgeIconStandard: 'badge-icon-standard-warning',
-      badgeIconCircle: 'badge-icon-circle-warning',
+      standard: 'bt-warning-token',
     },
     {
       label: 'Error',
-      badgeStandard: 'badge-standard-error',
-      badgeIconStandard: 'badge-icon-standard-error',
-      badgeIconCircle: 'badge-icon-circle-error',
+      standard: 'bt-error-token',
     },
     {
       label: 'Info',
-      badgeStandard: 'badge-standard-info',
-      badgeIconStandard: 'badge-icon-standard-info',
-      badgeIconCircle: 'badge-icon-circle-info',
+      standard: 'bt-info-token',
     },
     {
       label: 'On Success',
-      badgeStandard: 'badge-standard-on-success',
-      badgeIconStandard: 'badge-icon-standard-on-success',
-      badgeIconCircle: 'badge-icon-circle-on-success',
+      standard: 'bt-on-success-token',
     },
     {
       label: 'On Warning',
-      badgeStandard: 'badge-standard-on-warning',
-      badgeIconStandard: 'badge-icon-standard-on-warning',
-      badgeIconCircle: 'badge-icon-circle-on-warning',
+      standard: 'bt-on-warning-token',
     },
     {
       label: 'On Error',
-      badgeStandard: 'badge-standard-on-error',
-      badgeIconStandard: 'badge-icon-standard-on-error',
-      badgeIconCircle: 'badge-icon-circle-on-error',
+      standard: 'bt-on-error-token',
     },
     {
       label: 'On Info',
-      badgeStandard: 'badge-standard-on-info',
-      badgeIconStandard: 'badge-icon-standard-on-info',
-      badgeIconCircle: 'badge-icon-circle-on-info',
+      standard: 'bt-on-info-token',
     },
   ]
 
@@ -105,12 +83,12 @@
   <section class="card-section-yorha flex flex-col gap-4">
     <div class="grid grid-cols-3 justify-items-center gap-4">
       {#each colors as color}
-        <span class="badge {color.badgeStandard}">
+        <span class="badge badge-standard {color.standard}">
           Standard {color.label}
         </span>
       {/each}
       {#each colors as color}
-        <div class="badge {color.badgeStandard}">
+        <div class="badge badge-standard {color.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -120,12 +98,12 @@
     </div>
     <div class="grid grid-cols-4 justify-items-center gap-4">
       {#each alertColors as alertColor}
-        <span class="badge {alertColor.badgeStandard}">
+        <span class="badge badge-standard {alertColor.standard}">
           Standard {alertColor.label}
         </span>
       {/each}
       {#each alertColors as alertColor}
-        <div class="badge {alertColor.badgeStandard}">
+        <div class="badge badge-standard {alertColor.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -142,7 +120,7 @@
     <section class="card-section-yorha flex flex-col gap-4">
       {#each colors as color}
         <div class="flex items-center gap-4">
-          <span class="badge-icon {color.badgeIconStandard}">
+          <span class="badge-icon badge-icon-standard {color.standard}">
             <i class="fa-solid fa-robot" />
           </span>
           <span>{color.label}</span>
@@ -150,7 +128,7 @@
       {/each}
       {#each alertColors as alertColor}
         <div class="flex items-center gap-4">
-          <span class="badge-icon {alertColor.badgeIconStandard}">
+          <span class="badge-icon badge-icon-standard {alertColor.standard}">
             <i class="fa-solid fa-robot" />
           </span>
           <span>{alertColor.label}</span>
@@ -163,7 +141,7 @@
     <section class="card-section-yorha flex flex-col gap-4">
       {#each colors as color}
         <div class="flex items-center gap-4">
-          <span class="badge-icon {color.badgeIconCircle}">
+          <span class="badge-icon badge-icon-circle {color.standard}">
             <i class="fa-solid fa-robot" />
           </span>
           <span>{color.label}</span>
@@ -171,7 +149,7 @@
       {/each}
       {#each alertColors as alertColor}
         <div class="flex items-center gap-4">
-          <span class="badge-icon {alertColor.badgeIconCircle}">
+          <span class="badge-icon badge-icon-circle {alertColor.standard}">
             <i class="fa-solid fa-robot" />
           </span>
           <span>{alertColor.label}</span>
@@ -186,10 +164,10 @@
     <header class="card-header-yorha">Standard Badge</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
       {#each sizes as size}
-        <span class="badge badge-standard-primary {size.badgeSize}">
+        <span class="badge badge-standard bt-primary-950-50-token {size.badgeSize}">
           {size.label}
         </span>
-        <div class="badge badge-standard-primary {size.badgeSize}">
+        <div class="badge badge-standard bt-primary-950-50-token {size.badgeSize}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -204,7 +182,9 @@
       <section class="card-section-yorha flex flex-col gap-4">
         {#each sizes as size}
           <div class="flex items-center gap-4">
-            <span class="badge-icon badge-icon-standard-primary {size.badgeIconSize}">
+            <span
+              class="badge-icon badge-icon-standard bt-primary-950-50-token {size.badgeIconSize}"
+            >
               <i class="fa-solid fa-robot" />
             </span>
             <span>{size.label}</span>
@@ -217,7 +197,7 @@
       <section class="card-section-yorha flex flex-col gap-4">
         {#each sizes as size}
           <div class="flex items-center gap-4">
-            <span class="badge-icon badge-icon-circle-primary {size.badgeIconSize}">
+            <span class="badge-icon badge-icon-circle bt-primary-950-50-token {size.badgeIconSize}">
               <i class="fa-solid fa-robot" />
             </span>
             <span>{size.label}</span>
@@ -233,38 +213,38 @@
     <div class="grid grid-cols-2 justify-items-center gap-4">
       <div class="relative inline-block">
         <span
-          class="badge badge-standard-primary badge-xs absolute -right-5 -top-2 z-10 !bg-primary-50-950-token !text-primary-950-50-token"
+          class="badge badge-standard badge-xs bt-primary-950-50-active-token absolute -right-5 -top-2 z-10"
         >
           Badge
         </span>
-        <div class="badge badge-standard-primary badge-xl">Content</div>
+        <div class="badge badge-standard bt-primary-950-50-token badge-xl">Content</div>
       </div>
       <div class="relative inline-block">
         <div
-          class="badge badge-standard-primary badge-xs absolute -right-7 -top-2 z-10 !bg-primary-50-950-token !text-primary-950-50-token"
+          class="badge badge-standard badge-xs bt-primary-950-50-active-token absolute -right-7 -top-2 z-10"
         >
           <span>
             <i class="fa-solid fa-robot" />
           </span>
           <span>Badge</span>
         </div>
-        <div class="badge badge-standard-primary badge-xl">Content</div>
+        <div class="badge badge-standard bt-primary-950-50-token badge-xl">Content</div>
       </div>
       <div class="relative inline-block">
         <span
-          class="badge-icon badge-icon-standard-primary badge-icon-xs absolute -right-2.5 -top-2 z-10 !bg-primary-50-950-token !text-primary-950-50-token"
+          class="badge-icon badge-icon-standard badge-icon-xs bt-primary-950-50-active-token absolute -right-2.5 -top-2 z-10"
         >
           <i class="fa-solid fa-robot" />
         </span>
-        <div class="badge badge-standard-primary badge-xl">Content</div>
+        <div class="badge badge-standard bt-primary-950-50-token badge-xl">Content</div>
       </div>
       <div class="relative inline-block">
         <span
-          class="badge-icon badge-icon-circle-primary badge-icon-xs absolute -right-2.5 -top-2 z-10 !bg-primary-50-950-token !text-primary-950-50-token"
+          class="badge-icon badge-icon-circle badge-icon-xs bt-primary-950-50-active-token absolute -right-2.5 -top-2 z-10"
         >
           <i class="fa-solid fa-robot" />
         </span>
-        <div class="badge badge-standard-primary badge-xl">Content</div>
+        <div class="badge badge-standard bt-primary-950-50-token badge-xl">Content</div>
       </div>
     </div>
   </section>

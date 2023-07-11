@@ -2,82 +2,60 @@
   const colors = [
     {
       label: 'Primary',
-      btnStandard: 'btn-standard-primary',
-      btnYorha: 'btn-yorha-primary',
-      btnIconStandard: 'btn-icon-standard-primary',
-      btnIconCircle: 'btn-icon-circle-primary',
+      standard: 'bt-primary-950-50-token',
+      yorha: 'btn-yorha-primary',
     },
     {
       label: 'Secondary',
-      btnStandard: 'btn-standard-secondary',
-      btnYorha: 'btn-yorha-secondary',
-      btnIconStandard: 'btn-icon-standard-secondary',
-      btnIconCircle: 'btn-icon-circle-secondary',
+      standard: 'bt-secondary-950-50-token',
+      yorha: 'btn-yorha-secondary',
     },
     {
       label: 'Tertiary',
-      btnStandard: 'btn-standard-tertiary',
-      btnYorha: 'btn-yorha-tertiary',
-      btnIconStandard: 'btn-icon-standard-tertiary',
-      btnIconCircle: 'btn-icon-circle-tertiary',
+      standard: 'bt-tertiary-950-50-token',
+      yorha: 'btn-yorha-tertiary',
     },
   ]
   const alertColors = [
     {
       label: 'Success',
-      btnStandard: 'btn-standard-success',
-      btnYorha: 'btn-yorha-success',
-      btnIconStandard: 'btn-icon-standard-success',
-      btnIconCircle: 'btn-icon-circle-success',
+      standard: 'bt-success-token',
+      yorha: 'btn-yorha-success',
     },
     {
       label: 'Warning',
-      btnStandard: 'btn-standard-warning',
-      btnYorha: 'btn-yorha-warning',
-      btnIconStandard: 'btn-icon-standard-warning',
-      btnIconCircle: 'btn-icon-circle-warning',
+      standard: 'bt-warning-token',
+      yorha: 'btn-yorha-warning',
     },
     {
       label: 'Error',
-      btnStandard: 'btn-standard-error',
-      btnYorha: 'btn-yorha-error',
-      btnIconStandard: 'btn-icon-standard-error',
-      btnIconCircle: 'btn-icon-circle-error',
+      standard: 'bt-error-token',
+      yorha: 'btn-yorha-error',
     },
     {
       label: 'Info',
-      btnStandard: 'btn-standard-info',
-      btnYorha: 'btn-yorha-info',
-      btnIconStandard: 'btn-icon-standard-info',
-      btnIconCircle: 'btn-icon-circle-info',
+      standard: 'bt-info-token',
+      yorha: 'btn-yorha-info',
     },
     {
       label: 'On Success',
-      btnStandard: 'btn-standard-on-success',
-      btnYorha: 'btn-yorha-on-success',
-      btnIconStandard: 'btn-icon-standard-on-success',
-      btnIconCircle: 'btn-icon-circle-on-success',
+      standard: 'bt-on-success-token',
+      yorha: 'btn-yorha-on-success',
     },
     {
       label: 'On Warning',
-      btnStandard: 'btn-standard-on-warning',
-      btnYorha: 'btn-yorha-on-warning',
-      btnIconStandard: 'btn-icon-standard-on-warning',
-      btnIconCircle: 'btn-icon-circle-on-warning',
+      standard: 'bt-on-warning-token',
+      yorha: 'btn-yorha-on-warning',
     },
     {
       label: 'On Error',
-      btnStandard: 'btn-standard-on-error',
-      btnYorha: 'btn-yorha-on-error',
-      btnIconStandard: 'btn-icon-standard-on-error',
-      btnIconCircle: 'btn-icon-circle-on-error',
+      standard: 'bt-on-error-token',
+      yorha: 'btn-yorha-on-error',
     },
     {
       label: 'On Info',
-      btnStandard: 'btn-standard-on-info',
-      btnYorha: 'btn-yorha-on-info',
-      btnIconStandard: 'btn-icon-standard-on-info',
-      btnIconCircle: 'btn-icon-circle-on-info',
+      standard: 'bt-on-info-token',
+      yorha: 'btn-yorha-on-info',
     },
   ]
 
@@ -113,12 +91,12 @@
     <section class="card-section-yorha flex flex-col gap-4">
       <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
-          <button class="btn {color.btnStandard}">
+          <button class="btn btn-standard {color.standard}">
             Standard {color.label}
           </button>
         {/each}
         {#each colors as color}
-          <button class="btn {color.btnStandard}">
+          <button class="btn btn-standard {color.standard}">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -128,12 +106,12 @@
       </div>
       <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
-          <button class="btn {alertColor.btnStandard}">
+          <button class="btn btn-standard {alertColor.standard}">
             Standard {alertColor.label}
           </button>
         {/each}
         {#each alertColors as alertColor}
-          <button class="btn {alertColor.btnStandard}">
+          <button class="btn btn-standard {alertColor.standard}">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -148,12 +126,12 @@
     <section class="card-section-yorha flex flex-col gap-4">
       <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
-          <button class="btn {color.btnYorha}">
+          <button class="btn {color.yorha}">
             YoRHa {color.label}
           </button>
         {/each}
         {#each colors as color}
-          <button class="btn {color.btnYorha}">
+          <button class="btn {color.yorha}">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -163,12 +141,12 @@
       </div>
       <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
-          <button class="btn {alertColor.btnYorha}">
+          <button class="btn {alertColor.yorha}">
             YoRHa {alertColor.label}
           </button>
         {/each}
         {#each alertColors as alertColor}
-          <button class="btn {alertColor.btnYorha}">
+          <button class="btn {alertColor.yorha}">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -186,12 +164,12 @@
     <section class="card-section-yorha flex flex-col gap-4">
       <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
-          <a class="btn {color.btnStandard}" href="https://www.google.com/">
+          <a class="btn btn-standard {color.standard}" href="https://www.google.com/">
             Standard {color.label}
           </a>
         {/each}
         {#each colors as color}
-          <a class="btn {color.btnStandard}" href="https://www.google.com/">
+          <a class="btn btn-standard {color.standard}" href="https://www.google.com/">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -201,12 +179,12 @@
       </div>
       <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
-          <a class="btn {alertColor.btnStandard}" href="https://www.google.com/">
+          <a class="btn btn-standard {alertColor.standard}" href="https://www.google.com/">
             Standard {alertColor.label}
           </a>
         {/each}
         {#each alertColors as alertColor}
-          <a class="btn {alertColor.btnStandard}" href="https://www.google.com/">
+          <a class="btn btn-standard {alertColor.standard}" href="https://www.google.com/">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -221,12 +199,12 @@
     <section class="card-section-yorha flex flex-col gap-4">
       <div class="grid grid-cols-3 justify-items-center gap-4">
         {#each colors as color}
-          <a class="btn {color.btnYorha}" href="https://www.google.com/">
+          <a class="btn {color.yorha}" href="https://www.google.com/">
             YoRHa {color.label}
           </a>
         {/each}
         {#each colors as color}
-          <a class="btn {color.btnYorha}" href="https://www.google.com/">
+          <a class="btn {color.yorha}" href="https://www.google.com/">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -236,12 +214,12 @@
       </div>
       <div class="grid grid-cols-4 justify-items-center gap-4">
         {#each alertColors as alertColor}
-          <a class="btn {alertColor.btnYorha}" href="https://www.google.com/">
+          <a class="btn {alertColor.yorha}" href="https://www.google.com/">
             YoRHa {alertColor.label}
           </a>
         {/each}
         {#each alertColors as alertColor}
-          <a class="btn {alertColor.btnYorha}" href="https://www.google.com/">
+          <a class="btn {alertColor.yorha}" href="https://www.google.com/">
             <span>
               <i class="fa-solid fa-robot" />
             </span>
@@ -259,7 +237,7 @@
     <section class="card-section-yorha flex flex-col gap-4">
       {#each colors as color}
         <div class="flex items-center gap-4">
-          <button class="btn-icon {color.btnIconStandard}">
+          <button class="btn-icon btn-icon-standard {color.standard}">
             <i class="fa-solid fa-robot" />
           </button>
           <p>{color.label}</p>
@@ -267,7 +245,7 @@
       {/each}
       {#each alertColors as alertColor}
         <div class="flex items-center gap-4">
-          <button class="btn-icon {alertColor.btnIconStandard}">
+          <button class="btn-icon btn-icon-standard {alertColor.standard}">
             <i class="fa-solid fa-robot" />
           </button>
           <p>{alertColor.label}</p>
@@ -280,7 +258,7 @@
     <section class="card-section-yorha flex flex-col gap-4">
       {#each colors as color}
         <div class="flex items-center gap-4">
-          <button class="btn-icon {color.btnIconCircle}">
+          <button class="btn-icon btn-icon-circle {color.standard}">
             <i class="fa-solid fa-robot" />
           </button>
           <p>{color.label}</p>
@@ -288,7 +266,7 @@
       {/each}
       {#each alertColors as alertColor}
         <div class="flex items-center gap-4">
-          <button class="btn-icon {alertColor.btnIconCircle}">
+          <button class="btn-icon btn-icon-circle {alertColor.standard}">
             <i class="fa-solid fa-robot" />
           </button>
           <p>{alertColor.label}</p>
@@ -301,7 +279,7 @@
     <section class="card-section-yorha flex flex-col gap-4">
       {#each colors as color}
         <div class="flex items-center gap-4">
-          <a class="btn-icon {color.btnIconStandard}" href="https://www.google.com/">
+          <a class="btn-icon btn-icon-standard {color.standard}" href="https://www.google.com/">
             <i class="fa-solid fa-robot" />
           </a>
           <p>{color.label}</p>
@@ -309,7 +287,10 @@
       {/each}
       {#each alertColors as alertColor}
         <div class="flex items-center gap-4">
-          <a class="btn-icon {alertColor.btnIconStandard}" href="https://www.google.com/">
+          <a
+            class="btn-icon btn-icon-standard {alertColor.standard}"
+            href="https://www.google.com/"
+          >
             <i class="fa-solid fa-robot" />
           </a>
           <p>{alertColor.label}</p>
@@ -322,7 +303,7 @@
     <section class="card-section-yorha flex flex-col gap-4">
       {#each colors as color}
         <div class="flex items-center gap-4">
-          <a class="btn-icon {color.btnIconCircle}" href="https://www.google.com/">
+          <a class="btn-icon btn-icon-circle {color.standard}" href="https://www.google.com/">
             <i class="fa-solid fa-robot" />
           </a>
           <p>{color.label}</p>
@@ -330,7 +311,7 @@
       {/each}
       {#each alertColors as alertColor}
         <div class="flex items-center gap-4">
-          <a class="btn-icon {alertColor.btnIconCircle}" href="https://www.google.com/">
+          <a class="btn-icon btn-icon-circle {alertColor.standard}" href="https://www.google.com/">
             <i class="fa-solid fa-robot" />
           </a>
           <p>{alertColor.label}</p>
@@ -345,10 +326,10 @@
     <header class="card-header-yorha">Standard Button</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
       {#each sizes as size}
-        <button class="btn btn-standard-primary {size.btnSize}">
+        <button class="btn btn-standard bt-primary-950-50-token {size.btnSize}">
           {size.label}
         </button>
-        <button class="btn btn-standard-primary {size.btnSize}">
+        <button class="btn btn-standard bt-primary-950-50-token {size.btnSize}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -382,7 +363,7 @@
     <section class="card-section-yorha flex flex-col gap-4">
       {#each sizes as size}
         <div class="flex items-center gap-4">
-          <button class="btn-icon btn-icon-standard-primary {size.btnIconSize}">
+          <button class="btn-icon btn-icon-standard bt-primary-950-50-token {size.btnIconSize}">
             <i class="fa-solid fa-robot" />
           </button>
           <p>{size.label}</p>
@@ -395,7 +376,7 @@
     <section class="card-section-yorha flex flex-col gap-4">
       {#each sizes as size}
         <div class="flex items-center gap-4">
-          <button class="btn-icon btn-icon-circle-primary {size.btnIconSize}">
+          <button class="btn-icon btn-icon-circle bt-primary-950-50-token {size.btnIconSize}">
             <i class="fa-solid fa-robot" />
           </button>
           <p>{size.label}</p>
@@ -409,8 +390,8 @@
   <div class="card">
     <header class="card-header-yorha">Disabled Standard Button</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <button class="btn btn-standard-primary" disabled>Disabled</button>
-      <button class="btn btn-standard-primary" disabled>
+      <button class="btn btn-standard bt-primary-950-50-token" disabled>Disabled</button>
+      <button class="btn btn-standard bt-primary-950-50-token" disabled>
         <span>
           <i class="fa-solid fa-robot" />
         </span>
@@ -433,8 +414,8 @@
   <div class="card">
     <header class="card-header-yorha">Standard Button with Disabled Class</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <button class="btn btn-standard-primary btn-disabled">Disabled Class</button>
-      <button class="btn btn-standard-primary btn-disabled">
+      <button class="btn btn-standard bt-primary-950-50-token btn-disabled">Disabled Class</button>
+      <button class="btn btn-standard bt-primary-950-50-token btn-disabled">
         <span>
           <i class="fa-solid fa-robot" />
         </span>
@@ -457,10 +438,10 @@
   <div class="card">
     <header class="card-header-yorha">Disabled Icon Buttons</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <button class="btn-icon btn-icon-standard-primary" disabled>
+      <button class="btn-icon btn-icon-standard bt-primary-950-50-token" disabled>
         <i class="fa-solid fa-robot" />
       </button>
-      <button class="btn-icon btn-icon-circle-primary" disabled>
+      <button class="btn-icon btn-icon-circle bt-primary-950-50-token" disabled>
         <i class="fa-solid fa-robot" />
       </button>
     </section>
@@ -468,10 +449,10 @@
   <div class="card">
     <header class="card-header-yorha">Icon Buttons with Disabled Class</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <button class="btn-icon btn-icon-standard-primary btn-disabled">
+      <button class="btn-icon btn-icon-standard bt-primary-950-50-token btn-disabled">
         <i class="fa-solid fa-robot" />
       </button>
-      <button class="btn-icon btn-icon-circle-primary btn-disabled">
+      <button class="btn-icon btn-icon-circle bt-primary-950-50-token btn-disabled">
         <i class="fa-solid fa-robot" />
       </button>
     </section>

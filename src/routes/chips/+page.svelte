@@ -2,60 +2,49 @@
   const colors = [
     {
       label: 'Primary',
-      chipStandard: 'chip-standard-primary',
-      chipRounded: 'chip-rounded-primary',
+      standard: 'bt-primary-950-50-token',
     },
     {
       label: 'Secondary',
-      chipStandard: 'chip-standard-secondary',
-      chipRounded: 'chip-rounded-secondary',
+      standard: 'bt-secondary-950-50-token',
     },
     {
       label: 'Tertiary',
-      chipStandard: 'chip-standard-tertiary',
-      chipRounded: 'chip-rounded-tertiary',
+      standard: 'bt-tertiary-950-50-token',
     },
   ]
   const alertColors = [
     {
       label: 'Success',
-      chipStandard: 'chip-standard-success',
-      chipRounded: 'chip-rounded-success',
+      standard: 'bt-success-token',
     },
     {
       label: 'Warning',
-      chipStandard: 'chip-standard-warning',
-      chipRounded: 'chip-rounded-warning',
+      standard: 'bt-warning-token',
     },
     {
       label: 'Error',
-      chipStandard: 'chip-standard-error',
-      chipRounded: 'chip-rounded-error',
+      standard: 'bt-error-token',
     },
     {
       label: 'Info',
-      chipStandard: 'chip-standard-info',
-      chipRounded: 'chip-rounded-info',
+      standard: 'bt-info-token',
     },
     {
       label: 'On Success',
-      chipStandard: 'chip-standard-on-success',
-      chipRounded: 'chip-rounded-on-success',
+      standard: 'bt-on-success-token',
     },
     {
       label: 'On Warning',
-      chipStandard: 'chip-standard-on-warning',
-      chipRounded: 'chip-rounded-on-warning',
+      standard: 'bt-on-warning-token',
     },
     {
       label: 'On Error',
-      chipStandard: 'chip-standard-on-error',
-      chipRounded: 'chip-rounded-on-error',
+      standard: 'bt-on-error-token',
     },
     {
       label: 'On Info',
-      chipStandard: 'chip-standard-on-info',
-      chipRounded: 'chip-rounded-on-info',
+      standard: 'bt-on-info-token',
     },
   ]
 
@@ -90,12 +79,12 @@
   <section class="card-section-yorha flex flex-col gap-4">
     <div class="grid grid-cols-3 justify-items-center gap-4">
       {#each colors as color}
-        <span class="chip {color.chipStandard}">
+        <span class="chip chip-standard {color.standard}">
           Standard {color.label}
         </span>
       {/each}
       {#each colors as color}
-        <div class="chip {color.chipStandard}">
+        <div class="chip chip-standard {color.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -105,12 +94,12 @@
     </div>
     <div class="grid grid-cols-4 justify-items-center gap-4">
       {#each alertColors as alertColor}
-        <span class="chip {alertColor.chipStandard}">
+        <span class="chip chip-standard {alertColor.standard}">
           Standard {alertColor.label}
         </span>
       {/each}
       {#each alertColors as alertColor}
-        <div class="chip {alertColor.chipStandard}">
+        <div class="chip chip-standard {alertColor.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -125,12 +114,12 @@
   <section class="card-section-yorha flex flex-col gap-4">
     <div class="grid grid-cols-3 justify-items-center gap-4">
       {#each colors as color}
-        <span class="chip {color.chipRounded}">
+        <span class="chip chip-rounded {color.standard}">
           Rounded {color.label}
         </span>
       {/each}
       {#each colors as color}
-        <div class="chip {color.chipRounded}">
+        <div class="chip chip-rounded {color.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -140,12 +129,12 @@
     </div>
     <div class="grid grid-cols-4 justify-items-center gap-4">
       {#each alertColors as alertColor}
-        <span class="chip {alertColor.chipRounded}">
+        <span class="chip chip-rounded {alertColor.standard}">
           Rounded {alertColor.label}
         </span>
       {/each}
       {#each alertColors as alertColor}
-        <div class="chip {alertColor.chipRounded}">
+        <div class="chip chip-rounded {alertColor.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -161,12 +150,12 @@
   <section class="card-section-yorha flex flex-col gap-4">
     <div class="grid grid-cols-3 justify-items-center gap-4">
       {#each colors as color}
-        <span class="chip-interactive {color.chipStandard}">
+        <span class="chip-interactive chip-standard {color.standard}">
           Standard {color.label}
         </span>
       {/each}
       {#each colors as color}
-        <div class="chip-interactive {color.chipStandard}">
+        <div class="chip-interactive chip-standard {color.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -176,12 +165,12 @@
     </div>
     <div class="grid grid-cols-4 justify-items-center gap-4">
       {#each alertColors as alertColor}
-        <span class="chip-interactive {alertColor.chipStandard}">
+        <span class="chip-interactive chip-standard {alertColor.standard}">
           Standard {alertColor.label}
         </span>
       {/each}
       {#each alertColors as alertColor}
-        <div class="chip-interactive {alertColor.chipStandard}">
+        <div class="chip-interactive chip-standard {alertColor.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -196,12 +185,12 @@
   <section class="card-section-yorha flex flex-col gap-4">
     <div class="grid grid-cols-3 justify-items-center gap-4">
       {#each colors as color}
-        <span class="chip-interactive {color.chipRounded}">
+        <span class="chip-interactive chip-rounded {color.standard}">
           Rounded {color.label}
         </span>
       {/each}
       {#each colors as color}
-        <div class="chip-interactive {color.chipRounded}">
+        <div class="chip-interactive chip-rounded {color.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -211,12 +200,12 @@
     </div>
     <div class="grid grid-cols-4 justify-items-center gap-4">
       {#each alertColors as alertColor}
-        <span class="chip-interactive {alertColor.chipRounded}">
+        <span class="chip-interactive chip-rounded {alertColor.standard}">
           Rounded {alertColor.label}
         </span>
       {/each}
       {#each alertColors as alertColor}
-        <div class="chip-interactive {alertColor.chipRounded}">
+        <div class="chip-interactive chip-rounded {alertColor.standard}">
           <span>
             <i class="fa-solid fa-robot" />
           </span>
@@ -231,10 +220,10 @@
   <header class="card-header-yorha">Standard Variant</header>
   <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
     {#each sizes as size}
-      <span class="chip chip-standard-primary {size.chipSize}">
+      <span class="chip chip-standard bt-primary-950-50-token {size.chipSize}">
         {size.label}
       </span>
-      <div class="chip chip-standard-primary {size.chipSize}">
+      <div class="chip chip-standard bt-primary-950-50-token {size.chipSize}">
         <span>
           <i class="fa-solid fa-robot" />
         </span>
@@ -247,10 +236,10 @@
   <header class="card-header-yorha">Rounded Variant</header>
   <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
     {#each sizes as size}
-      <span class="chip chip-rounded-primary {size.chipSize}">
+      <span class="chip chip-rounded bt-primary-950-50-token {size.chipSize}">
         {size.label}
       </span>
-      <div class="chip chip-rounded-primary {size.chipSize}">
+      <div class="chip chip-rounded bt-primary-950-50-token {size.chipSize}">
         <span>
           <i class="fa-solid fa-robot" />
         </span>
@@ -264,8 +253,8 @@
   <div class="card">
     <header class="card-header-yorha">Standard Variant</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <span class="chip chip-standard-primary chip-disabled">Disabled Class</span>
-      <div class="chip chip-standard-primary chip-disabled">
+      <span class="chip chip-standard bt-primary-950-50-token chip-disabled">Disabled Class</span>
+      <div class="chip chip-standard bt-primary-950-50-token chip-disabled">
         <span>
           <i class="fa-solid fa-robot" />
         </span>
@@ -276,8 +265,8 @@
   <div class="card">
     <header class="card-header-yorha">Rounded Variant</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <span class="chip chip-rounded-primary chip-disabled">Disabled Class</span>
-      <div class="chip chip-rounded-primary chip-disabled">
+      <span class="chip chip-rounded bt-primary-950-50-token chip-disabled">Disabled Class</span>
+      <div class="chip chip-rounded bt-primary-950-50-token chip-disabled">
         <span>
           <i class="fa-solid fa-robot" />
         </span>
