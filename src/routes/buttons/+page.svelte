@@ -4,16 +4,19 @@
       label: 'Primary',
       standard: 'bt-primary-950-50-token',
       yorha: 'yorha-primary-950-50-token',
+      yorhaActive: 'yorha-primary-950-50-active-token',
     },
     {
       label: 'Secondary',
       standard: 'bt-secondary-950-50-token',
-      yorha: 'yorha-primary-950-50-token',
+      yorha: 'yorha-secondary-950-50-token',
+      yorhaActive: 'yorha-secondary-950-50-active-token',
     },
     {
       label: 'Tertiary',
       standard: 'bt-tertiary-950-50-token',
-      yorha: 'yorha-primary-950-50-token',
+      yorha: 'yorha-tertiary-950-50-token',
+      yorhaActive: 'yorha-primary-950-50-active-token',
     },
   ]
   const alertColors = [
@@ -21,41 +24,49 @@
       label: 'Success',
       standard: 'bt-success-token',
       yorha: 'yorha-success-token',
+      yorhaActive: 'yorha-success-active-token',
     },
     {
       label: 'Warning',
       standard: 'bt-warning-token',
       yorha: 'yorha-warning-token',
+      yorhaActive: 'yorha-warning-active-token',
     },
     {
       label: 'Error',
       standard: 'bt-error-token',
       yorha: 'yorha-error-token',
+      yorhaActive: 'yorha-error-active-token',
     },
     {
       label: 'Info',
       standard: 'bt-info-token',
       yorha: 'yorha-info-token',
+      yorhaActive: 'yorha-info-active-token',
     },
     {
       label: 'On Success',
       standard: 'bt-on-success-token',
       yorha: 'yorha-on-success-token',
+      yorhaActive: 'yorha-on-success-active-token',
     },
     {
       label: 'On Warning',
       standard: 'bt-on-warning-token',
       yorha: 'yorha-on-warning-token',
+      yorhaActive: 'yorha-on-warning-active-token',
     },
     {
       label: 'On Error',
       standard: 'bt-on-error-token',
       yorha: 'yorha-on-error-token',
+      yorhaActive: 'yorha-on-error-active-token',
     },
     {
       label: 'On Info',
       standard: 'bt-on-info-token',
       yorha: 'yorha-on-info-token',
+      yorhaActive: 'yorha-on-info-active-token',
     },
   ]
 
@@ -414,8 +425,8 @@
   <div class="card">
     <header class="card-header-yorha">Standard Button with Disabled Class</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <button class="btn btn-standard bt-primary-950-50-token btn-disabled">Disabled Class</button>
-      <button class="btn btn-standard bt-primary-950-50-token btn-disabled">
+      <button class="btn btn-standard btn-disabled bt-primary-950-50-token">Disabled Class</button>
+      <button class="btn btn-standard btn-disabled bt-primary-950-50-token">
         <span>
           <i class="fa-solid fa-robot" />
         </span>
@@ -426,8 +437,8 @@
   <div class="card">
     <header class="card-header-yorha">YoRHa Button with Disabled Class</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <button class="btn btn-yorha yorha-primary-950-50-token btn-disabled">Disabled Class</button>
-      <button class="btn btn-yorha yorha-primary-950-50-token btn-disabled">
+      <button class="btn btn-yorha btn-disabled yorha-primary-950-50-token">Disabled Class</button>
+      <button class="btn btn-yorha btn-disabled yorha-primary-950-50-token">
         <span>
           <i class="fa-solid fa-robot" />
         </span>
@@ -449,12 +460,35 @@
   <div class="card">
     <header class="card-header-yorha">Icon Buttons with Disabled Class</header>
     <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
-      <button class="btn-icon btn-icon-standard bt-primary-950-50-token btn-disabled">
+      <button class="btn-icon btn-icon-standard btn-disabled bt-primary-950-50-token">
         <i class="fa-solid fa-robot" />
       </button>
-      <button class="btn-icon btn-icon-circle bt-primary-950-50-token btn-disabled">
+      <button class="btn-icon btn-icon-circle btn-disabled bt-primary-950-50-token">
         <i class="fa-solid fa-robot" />
       </button>
     </section>
   </div>
+</div>
+<h2 class="h2 heading-banner border-primary-950-50-token">YoRHa Active</h2>
+<div class="card m-4">
+  <section class="card-section-yorha grid grid-cols-2 justify-items-center gap-4">
+    {#each colors as color}
+      <button class="btn btn-yorha-active {color.yorhaActive}">YoRHa Active Class</button>
+      <button class="btn btn-yorha-active {color.yorhaActive}">
+        <span>
+          <i class="fa-solid fa-robot" />
+        </span>
+        <span>YoRHa {color.label} Active</span>
+      </button>
+    {/each}
+    {#each alertColors as alertColor}
+      <button class="btn btn-yorha-active {alertColor.yorhaActive}">YoRHa Active Class</button>
+      <button class="btn btn-yorha-active {alertColor.yorhaActive}">
+        <span>
+          <i class="fa-solid fa-robot" />
+        </span>
+        <span>YoRHa {alertColor.label} Active</span>
+      </button>
+    {/each}
+  </section>
 </div>

@@ -156,7 +156,7 @@ module.exports = () => {
     yorhaClasses[`.yorha-on-${alertColorName}-token::before`] = {
       'border-color': `rgb(var(--on-${alertColorName}))`,
     }
-    yorhaClasses[`.yorha-${alertColorName}-acive-token::before`] = {
+    yorhaClasses[`.yorha-${alertColorName}-active-token::before`] = {
       'border-color': `rgb(var(--color-${alertColorName}))`,
     }
     yorhaClasses[`.yorha-on-${alertColorName}-active-token::before`] = {
