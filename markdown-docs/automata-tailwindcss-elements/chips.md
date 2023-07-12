@@ -142,29 +142,23 @@ Chips come with two types of variant styles classes, Standard (`.chip-standard`)
 
 #### Standard (.chip-standard)
 
-To style a chip with the Standard variant, apply the `.chip-standard` or a `.chip-standard-{color}`/`.chip-standard-{alertColor}`/`.chip-standard-on-{alertColor}` class.
+To style a chip with the Standard variant, apply the `.chip-standard` class with an optional `.bt` token or other background-text colors.
 
 ```html
 <span class="chip chip-standard">Chip</span>
-<div class="chip chip-standard-primary">
+<div class="chip chip-standard bt-primary-950-50-token">
   <span>
     <i class="fa-solid fa-robot" />
   </span>
   <span>Chip</span>
 </div>
-<span class="chip-interactive chip-standard-success" on:click={() => {}} on:keypress>Chip</span>
-<div class="chip-interactive chip-standard-on-error" on:click={() => {}} on:keypress>
+<span class="chip-interactive chip-standard bt-success-token" on:click={() => {}} on:keypress>Chip</span>
+<div class="chip-interactive chip-standard bt-on-error-token" on:click={() => {}} on:keypress>
   <span>
     <i class="fa-solid fa-robot" />
   </span>
   <span>Chip</span>
 </div>
-```
-
-To use custom colors or shadings, apply the `.chip-standard` with background and text color classes.
-
-```html
-<span class="chip chip-standard bg-primary-800-200-token text-primary-200-800-token">Chip</span>
 ```
 
 The `.chip-standard` class contains the following styles:
@@ -176,64 +170,25 @@ The `.chip-standard` class contains the following styles:
 }
 ```
 
-The `.chip-standard-{color}` class contains the following styles:
-
-```css
-.chip-standard-{color} {
-  /* Standard Styles */
-  @apply chip-standard;
-  /* Color */
-  @apply bg-{color}-950-50-token text-{color}-50-950-token;
-}
-```
-
-The `.chip-standard-{alertColor}` class contains the following styles:
-
-```css
-.chip-standard-{alertColor} {
-  /* Standard Styles */
-  @apply chip-standard;
-  /* Color */
-  @apply bg-{alertColor} text-on-{alertColor}-token;
-}
-```
-
-The `.chip-standard-on-{alertColor}` class contains the following styles:
-
-```css
-.chip-standard-on-{alertColor} {
-  /* Standard Styles */
-  @apply chip-standard;
-  /* Color */
-  @apply text-{alertColor} bg-on-{alertColor}-token;
-}
-```
-
 #### Rounded (.chip-rounded)
 
-To style a chip with the Rounded variant, apply the `.chip-rounded` or a `.chip-rounded-{color}`/`.chip-rounded-{alertColor}`/`.chip-rounded-on-{alertColor}` class.
+To style a chip with the Rounded variant, apply the `.chip-rounded` class with an optional `.bt` token or other background-text colors.
 
 ```html
 <span class="chip chip-rounded">Chip</span>
-<div class="chip chip-rounded-primary">
+<div class="chip chip-rounded bt-primary-950-50-token">
   <span>
     <i class="fa-solid fa-robot" />
   </span>
   <span>Chip</span>
 </div>
-<span class="chip-interactive chip-rounded-success" on:click={() => {}} on:keypress>Chip</span>
-<div class="chip-interactive chip-rounded-on-error" on:click={() => {}} on:keypress>
+<span class="chip-interactive chip-rounded bt-success-token" on:click={() => {}} on:keypress>Chip</span>
+<div class="chip-interactive chip-rounded bt-on-error-token" on:click={() => {}} on:keypress>
   <span>
     <i class="fa-solid fa-robot" />
   </span>
   <span>Chip</span>
 </div>
-```
-
-To use custom colors or shadings, apply the `.chip-rounded` with background and text color classes.
-
-```html
-<span class="chip chip-rounded bg-primary-800-200-token text-primary-200-800-token">Chip</span>
 ```
 
 The `.chip-rounded` class contains the following styles:
@@ -244,39 +199,6 @@ The `.chip-rounded` class contains the following styles:
   @apply rounded-full;
   /* Shadow */
   @apply shadow-base;
-}
-```
-
-The `.chip-rounded-{color}` class contains the following styles:
-
-```css
-.chip-rounded-{color} {
-  /* Rounded Styles */
-  @apply chip-rounded;
-  /* Color */
-  @apply bg-{color}-950-50-token text-{color}-50-950-token;
-}
-```
-
-The `.chip-rounded-{alertColor}` class contains the following styles:
-
-```css
-.chip-rounded-{alertColor} {
-  /* Rounded Styles */
-  @apply chip-rounded;
-  /* Color */
-  @apply bg-{alertColor} text-on-{alertColor}-token;
-}
-```
-
-The `.chip-rounded-on-{alertColor}` class contains the following styles:
-
-```css
-.chip-rounded-on-{alertColor} {
-  /* Rounded Styles */
-  @apply chip-rounded;
-  /* Color */
-  @apply text-{alertColor} bg-on-{alertColor}-token;
 }
 ```
 

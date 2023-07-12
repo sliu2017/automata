@@ -79,26 +79,18 @@ Alerts come with one type of variant styles classes, Standard (`.alert-standard`
 
 #### Standard (.alert-standard)
 
-To style an alert with the Standard variant, apply the `.alert-standard` or an `.alert-standard-{color}`/`.alert-standard-{alertColor}`/`.alert-standard-on-{alertColor}` class.
+To style an alert with the Standard variant, apply the `.alert-standard` class with an optional `.bt` token or other background-text colors.
 
 ```html
 <aside class="alert alert-standard">Alert</aside>
-<aside class="alert alert-standard-primary">
+<aside class="alert alert-standard bt-primary-950-50-token">
   <span><i class="fa-solid fa-robot" /></span>
   <span>Alert</span>
 </aside>
-<aside class="alert alert-standard-success">Alert</aside>
-<aside class="alert alert-standard-on-success">
+<aside class="alert alert-standard bt-success-token">Alert</aside>
+<aside class="alert alert-standard bt-on-error-token">
   <span><i class="fa-solid fa-robot" /></span>
   <span>Alert</span>
-</aside>
-```
-
-To use custom colors or shadings, apply the `.alert-standard` with background and text color classes.
-
-```html
-<aside class="alert alert-standard bg-primary-800-200-token text-primary-200-800-token">
-  Alert
 </aside>
 ```
 
@@ -108,38 +100,5 @@ The `.alert-standard` class contains the following styles:
 .alert-standard {
   /* Shadow */
   @apply shadow-container;
-}
-```
-
-The `.alert-standard-{color}` class contains the following styles:
-
-```css
-.alert-standard-{color} {
-  /* Standard Styles */
-  @apply alert-standard;
-  /* Color */
-  @apply bg-{color}-950-50-token text-{color}-50-950-token;
-}
-```
-
-The `.alert-standard-{alertColor}` class contains the following styles:
-
-```css
-.alert-standard-{alertColor} {
-  /* Standard Styles */
-  @apply alert-standard;
-  /* Color */
-  @apply bg-{alertColor} text-on-{alertColor}-token;
-}
-```
-
-The `.alert-standard-on-{alertColor}` class contains the following styles:
-
-```css
-.alert-standard-on-{alertColor} {
-  /* Standard Styles */
-  @apply alert-standard;
-  /* Color */
-  @apply text-{alertColor} bg-on-{alertColor}-token;
 }
 ```

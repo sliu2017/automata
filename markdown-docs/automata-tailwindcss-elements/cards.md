@@ -22,10 +22,8 @@ The `.card` class contains the following styles:
 
 ```css
 .card {
-  /* Background Color */
-  @apply bg-primary-200-800-token;
-  /* Text Color */
-  @apply text-primary-800-200-token;
+  /* Background Text Color */
+  @apply bt-primary-200-800-token;
   /* Borders */
   @apply rounded-container border-container outline-container outline-offset-container ring-container ring-offset-container border-container-token outline-container-token;
   /* Shadow */
@@ -94,10 +92,8 @@ The `.card-header-yorha` class contains the following styles:
 
 ```css
 .card-header-yorha {
-  /* Background Color */
-  @apply bg-primary-800-200-token;
-  /* Text Color */
-  @apply text-primary-200-800-token;
+  /* Background Text Color */
+  @apply bt-primary-800-200-token;
   /* Text Size */
   @apply text-xl;
   /* Padding */

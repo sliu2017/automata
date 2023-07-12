@@ -109,31 +109,23 @@ Badges come with one type of variant style classes, Standard (`.badge-standard`)
 
 #### Standard (.badge-standard)
 
-To style a badge with the Standard variant, apply the `.badge-standard` or a `.badge-standard-{color}`/`.badge-standard-{alertColor}`/`.badge-standard-on-{alertColor}` class.
+To style a badge with the Standard variant, apply the `.badge-standard` class with an optional `.bt` token or other background-text colors.
 
 ```html
 <span class="badge badge-standard">Standard</span>
-<div class="badge badge-standard-primary">
+<div class="badge badge-standard bt-primary-950-50-token">
   <span>
     <i class="fa-solid fa-robot" />
   </span>
   <span>Standard Primary</span>
 </div>
-<span class="badge badge-success">Standard Success</span>
-<div class="badge badge-standard-on-error">
+<span class="badge badge bt-success-token">Standard Success</span>
+<div class="badge badge-standard bt-on-error-token">
   <span>
     <i class="fa-solid fa-robot" />
   </span>
   <span>Standard On Error</span>
 </div>
-```
-
-To use custom colors or shadings, apply the `.badge-standard` with background and text color classes.
-
-```html
-<span class="badge badge-standard bg-primary-800-200-token text-primary-200-800-token">
-  Standard
-</span>
 ```
 
 The `.badge-standard` class contains the following styles:
@@ -142,39 +134,6 @@ The `.badge-standard` class contains the following styles:
 .badge-standard {
   /* Shadow */
   @apply shadow-base;
-}
-```
-
-The `.badge-standard-{color}` class contains the following styles:
-
-```css
-.badge-standard-{color} {
-  /* Standard Styles */
-  @apply badge-standard;
-  /* Color */
-  @apply bg-{color}-950-50-token text-{color}-50-950-token;
-}
-```
-
-The `.badge-standard-{alertColor}` class contains the following styles:
-
-```css
-.badge-standard-{alertColor} {
-  /* Standard Styles */
-  @apply badge-standard;
-  /* Color */
-  @apply bg-{alertColor} text-on-{alertColor}-token;
-}
-```
-
-The `.badge-standard-on-{alertColor}` class contains the following styles:
-
-```css
-.badge-standard-on-{alertColor} {
-  /* Standard Styles */
-  @apply badge-standard;
-  /* Color */
-  @apply text-{alertColor} bg-on-{alertColor}-token;
 }
 ```
 
@@ -259,27 +218,19 @@ Icon badges come with two variant style classes, Standard (.badge-icon-standard)
 
 #### Standard (.badge-icon-standard)
 
-To style an icon badge with the Standard variant, apply the `.badge-icon-standard` or a `.badge-icon-standard-{color}`/`.badge-icon-standard-{alertColor}`/`.badge-icon-standard-on-{alertColor}` class.
+To style an icon badge with the Standard variant, apply the `.badge-icon-standard` class with an optional `.bt` token or other background-text colors.
 
 ```html
 <span class="badge-icon badge-icon-standard">
   <i class="fa-solid fa-robot" />
 </span>
-<span class="badge-icon badge-icon-standard-primary">
+<span class="badge-icon badge-icon-standard bt-primary-950-50-token">
   <i class="fa-solid fa-robot" />
 </span>
-<span class="badge-icon badge-icon-standard-success">
+<span class="badge-icon badge-icon-standard bt-success-token">
   <i class="fa-solid fa-robot" />
 </span>
-<span class="badge-icon badge-icon-standard-on-error">
-  <i class="fa-solid fa-robot" />
-</span>
-```
-
-To use custom colors or shadings, apply the `.badge-icon-standard` with background and text color classes.
-
-```html
-<span class="badge-icon badge-icon-standard bg-primary-800-200-token text-primary-200-800-token">
+<span class="badge-icon badge-icon-standard bt-on-error-token">
   <i class="fa-solid fa-robot" />
 </span>
 ```
@@ -293,62 +244,21 @@ The `.badge-icon-standard` class contains the following styles:
 }
 ```
 
-The `.badge-icon-standard-{color}` class contains the following styles:
-
-```css
-.badge-icon-standard-{color} {
-  /* Standard Styles */
-  @apply badge-icon-standard;
-  /* Color */
-  @apply bg-{color}-950-50-token text-{color}-50-950-token;
-}
-```
-
-The `.badge-icon-standard-{alertColor}` class contains the following styles:
-
-```css
-.badge-icon-standard-{alertColor} {
-  /* Standard Styles */
-  @apply badge-icon-standard;
-  /* Color */
-  @apply bg-{alertColor} text-on-{alertColor}-token;
-}
-```
-
-The `.badge-icon-standard-on-{alertColor}` class contains the following styles:
-
-```css
-.badge-icon-standard-on-{alertColor} {
-  /* Standard Styles */
-  @apply badge-icon-standard;
-  /* Color */
-  @apply text-{alertColor} bg-on-{alertColor}-token;
-}
-```
-
 #### Circle (.badge-icon-circle)
 
-To style an icon badge with the Circle variant, apply the `.badge-icon-circle` or a `.badge-icon-circle-{color}`/`.badge-icon-circle-{alertColor}`/`.badge-icon-circle-on-{alertColor}` class.
+To style an icon badge with the Circle variant, apply the `.badge-icon-circle` class with an optional `.bt` token or other background-text colors.
 
 ```html
 <span class="badge-icon badge-icon-circle">
   <i class="fa-solid fa-robot" />
 </span>
-<span class="badge-icon badge-icon-circle-primary">
+<span class="badge-icon badge-icon-circle bt-primary-950-50-token">
   <i class="fa-solid fa-robot" />
 </span>
-<span class="badge-icon badge-icon-circle-success">
+<span class="badge-icon badge-icon-circle bt-success-token">
   <i class="fa-solid fa-robot" />
 </span>
-<span class="badge-icon badge-icon-circle-on-error">
-  <i class="fa-solid fa-robot" />
-</span>
-```
-
-To use custom colors or shadings, apply the `.badge-icon-circle` with background and text color classes.
-
-```html
-<span class="badge-icon badge-icon-circle bg-primary-800-200-token text-primary-200-800-token">
+<span class="badge-icon badge-icon-circle bt-on-error-token">
   <i class="fa-solid fa-robot" />
 </span>
 ```
@@ -361,39 +271,6 @@ The `.badge-icon-circle` class contains the following styles:
   @apply rounded-full;
   /* Shadow */
   @apply shadow-base;
-}
-```
-
-The `.badge-icon-circle-{color}` class contains the following styles:
-
-```css
-.badge-icon-circle-{color} {
-  /* Circle Styles */
-  @apply badge-icon-circle;
-  /* Color */
-  @apply bg-{color}-950-50-token text-{color}-50-950-token;
-}
-```
-
-The `.badge-icon-circle-{alertColor}` class contains the following styles:
-
-```css
-.badge-icon-circle-{alertColor} {
-  /* Circle Styles */
-  @apply badge-icon-circle;
-  /* Color */
-  @apply bg-{alertColor} text-on-{alertColor}-token;
-}
-```
-
-The `.badge-icon-circle-on-{alertColor}` class contains the following styles:
-
-```css
-.badge-icon-circle-on-{alertColor} {
-  /* Circle Styles */
-  @apply badge-icon-circle;
-  /* Color */
-  @apply text-{alertColor} bg-on-{alertColor}-token;
 }
 ```
 
