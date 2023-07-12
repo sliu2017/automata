@@ -31,6 +31,8 @@ Design Tokens are custom CSS classes meant to provide utility and allow develope
   - [Backdrop Color](#backdrop-color)
   - [Hover Color](#hover-color)
   - [Active Color](#active-color)
+- [Background Text Combinations](#background-text-combinations)
+- [YoRHa](#yorha)
 
 ## Typography
 
@@ -547,4 +549,136 @@ bg-on-success-active-token
 bg-on-warning-active-token
 bg-on-error-active-token
 bg-on-info-active-token
+```
+
+## Background Text Combinations
+
+### Color Palette
+
+Swaps between specified color shades on light/dark mode change.
+
+```text
+bt-primary-50-950-token
+bt-secondary-100-900-token
+bt-tertiary-200-800-token
+...
+bt-primary-950-50-token
+bt-secondary-900-100-token
+bt-tertiary-800-200-token
+```
+
+#### Alert Colors
+
+```text
+bt-success-token
+bt-warning-token
+bt-error-token
+bt-info-token
+```
+
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+bt-on-success-token
+bt-on-warning-token
+bt-on-error-token
+bt-on-info-token
+```
+
+### Active
+
+#### Color Palette
+
+```text
+bt-primary-active-token
+bt-secondary-active-token
+bt-tertiary-active-token
+...
+bt-primary-active-token
+bt-secondary-active-token
+bt-tertiary-active-token
+```
+
+#### Alert Colors
+
+```text
+bt-success-active-token
+bt-warning-active-token
+bt-error-active-token
+bt-info-active-token
+```
+
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+bt-on-success-active-token
+bt-on-warning-active-token
+bt-on-error-active-token
+bt-on-info-active-token
+```
+
+## YoRHa
+
+### Color Palette
+
+Swaps between specified color shades on light/dark mode change.
+
+```text
+yorha-primary-50-950-token
+yorha-secondary-100-900-token
+yorha-tertiary-200-800-token
+...
+yorha-primary-950-50-token
+yorha-secondary-900-100-token
+yorha-tertiary-800-200-token
+```
+
+#### Alert Colors
+
+```text
+yorha-success-token
+yorha-warning-token
+yorha-error-token
+yorha-info-token
+```
+
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+yorha-on-success-token
+yorha-on-warning-token
+yorha-on-error-token
+yorha-on-info-token
+```
+
+### Active
+
+#### Color Palette
+
+```text
+yorha-primary-active-token
+yorha-secondary-active-token
+yorha-tertiary-active-token
+...
+yorha-primary-active-token
+yorha-secondary-active-token
+yorha-tertiary-active-token
+```
+
+#### Alert Colors
+
+```text
+yorha-success-active-token
+yorha-warning-active-token
+yorha-error-active-token
+yorha-info-active-token
+```
+
+Please note that each of these tokens are configured through the "On" Color CSS Variables.
+
+```text
+yorha-on-success-active-token
+yorha-on-warning-active-token
+yorha-on-error-active-token
+yorha-on-info-active-token
 ```
