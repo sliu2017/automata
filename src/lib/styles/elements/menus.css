@@ -2,19 +2,145 @@
 
 @layer components {
   /* ----- Menu ----- */
-  .menu {
+
+  .menu,
+  .menu-dl,
+  .menu-nav {
+    /* List Style */
+    @apply list-none;
+    /* Spacing */
+    @apply space-y-1;
   }
 
-  .menu-dl {
+  /* ----- Menu Item ----- */
+
+  .menu-item-base-styles {
+    /* Borders */
+    @apply rounded-base border-base outline-base outline-offset-base ring-base ring-offset-base border-token outline-token;
+    /* Flex */
+    @apply flex items-center gap-4;
   }
 
-  /* ----- Menu Item States ----- */
+  .menu-item {
+    @apply menu-item-base-styles;
+    /* Typography */
+    @apply whitespace-normal break-words;
+  }
 
-  /* ----- Menu Item Add-Ons ----- */
+  .menu-dl-item {
+    @apply menu-item-base-styles;
+    /* Typography */
+    @apply whitespace-nowrap;
+  }
 
-  /* Icon */
+  /* Anchor Wrapper */
+  .menu-item-a-wrapper {
+    @apply z-10 block;
+  }
 
-  /* Description */
+  .menu-nav-item-a-wrapper {
+    @apply z-10 flex w-full whitespace-nowrap;
+  }
 
-  /* Action */
+  /* Interactive */
+  .menu-item-interactive {
+    @apply menu-item cursor-pointer;
+  }
+
+  .menu-dl-item-interactive {
+    @apply menu-dl-item cursor-pointer;
+  }
+
+  /* Disabled */
+  .menu-item-disabled {
+    @apply !cursor-not-allowed !opacity-50;
+  }
+
+  /* Actions */
+  .menu-item-actions {
+    @apply flex flex-none flex-nowrap items-center;
+  }
+
+  .menu-item-actions-btn {
+    /* Button Styles */
+    @apply btn btn-sm;
+    /* Hover Brightness */
+    @apply hover:[&:not(*:disabled)]:[&:not(.menu-item-disabled)]:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  .menu-item-actions-btn-icon {
+    /* Button Styles */
+    @apply btn-icon btn-icon-sm;
+    /* Hover Brightness */
+    @apply hover:[&:not(*:disabled)]:[&:not(.menu-item-disabled)]:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  /* Variants */
+  .menu-item-standard {
+    /* Hover Brightness */
+    @apply hover:[&:not(*:disabled)]:[&:not(.menu-item-disabled)]:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
+
+  .menu-item-yorha {
+    /* Content Area */
+    @apply relative z-0 transition-all;
+    /* Border Lines */
+    @apply before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:w-0 before:border-y-2 before:transition-all before:duration-150 before:ease-out before:content-[''];
+    /* Content Area Animation */
+    @apply after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:z-[-1] after:w-0 after:transition-all after:duration-150 after:ease-out after:content-[''];
+    /* Content Area on Hover */
+    @apply hover:[&:not(*:disabled)]:[&:not(.menu-item-disabled)]:bg-transparent hover:[&:not(*:disabled)]:[&:not(.menu-item-disabled)]:shadow-base;
+    /* Border Lines on Hover */
+    @apply hover:[&:not(*:disabled)]:[&:not(.menu-item-disabled)]:before:bottom-[-4px] hover:[&:not(*:disabled)]:[&:not(.menu-item-disabled)]:before:top-[-4px] hover:[&:not(*:disabled)]:[&:not(.menu-item-disabled)]:before:w-full;
+    /* Content Area Animation on Hover */
+    @apply hover:[&:not(*:disabled)]:[&:not(.menu-item-disabled)]:after:w-full;
+  }
+
+  .menu-item-yorha-active {
+    /* Content Area */
+    @apply relative z-0 transition-all;
+    /* Border Lines */
+    @apply before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:w-0 before:border-y-2 before:transition-all before:duration-150 before:ease-out before:content-[''];
+    /* Content Area Animation */
+    @apply after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:z-[-1] after:w-0 after:transition-all after:duration-150 after:ease-out after:content-[''];
+    /* Content Area */
+    @apply bg-transparent shadow-base;
+    /* Border Lines */
+    @apply before:bottom-[-4px] before:top-[-4px] before:w-full;
+    /* Content Area Animation */
+    @apply after:w-full;
+  }
+
+  /* ----- Submenu ----- */
+
+  .menu-submenu-summary {
+    @apply cursor-pointer;
+  }
+
+  .menu-submenu-list {
+    /* Margins */
+    @apply ml-5 mt-1;
+    /* Content Area */
+    @apply relative z-0;
+    /* Border Lines */
+    @apply before:absolute before:bottom-0 before:left-[-16px] before:right-0 before:top-0 before:border-l-2;
+  }
+
+  .menu-submenu-item-click-wrapper {
+    @apply z-10 flex w-full whitespace-nowrap;
+  }
+
+  /* Variants */
+  .menu-submenu-summary-standard {
+    /* Hover Brightness */
+    @apply hover:brightness-[1.15];
+    /* Transitions */
+    @apply transition-all;
+  }
 }
