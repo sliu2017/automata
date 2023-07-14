@@ -21,7 +21,8 @@
     @apply flex items-center gap-4;
   }
 
-  .menu-item {
+  .menu-item,
+  .menu-nav-item {
     @apply menu-item-base-styles;
     /* Typography */
     @apply whitespace-normal break-words;
@@ -49,6 +50,10 @@
 
   .menu-dl-item-interactive {
     @apply menu-dl-item cursor-pointer;
+  }
+
+  .menu-nav-item-interactive {
+    @apply menu-nav-item cursor-pointer;
   }
 
   /* Disabled */
@@ -120,7 +125,12 @@
   /* ----- Submenu ----- */
 
   .menu-submenu-summary {
-    @apply cursor-pointer;
+    @apply cursor-pointer whitespace-nowrap transition-all hover:brightness-[1.15];
+  }
+
+  .menu-submenu-li-wrapper,
+  .menu-submenu-details-wrapper {
+    @apply z-10 flex w-full;
   }
 
   .menu-submenu-list {
@@ -134,13 +144,5 @@
 
   .menu-submenu-item-click-wrapper {
     @apply z-10 flex w-full whitespace-nowrap;
-  }
-
-  /* Variants */
-  .menu-submenu-summary-standard {
-    /* Hover Brightness */
-    @apply hover:brightness-[1.15];
-    /* Transitions */
-    @apply transition-all;
   }
 }

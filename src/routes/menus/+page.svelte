@@ -417,7 +417,7 @@
       <nav>
         <ul class="menu-nav">
           {#each colors as color}
-            <li class="menu-item-interactive menu-item-standard {color.standard}">
+            <li class="menu-nav-item-interactive menu-item-standard {color.standard}">
               <a class="menu-nav-item-a-wrapper" href="https://www.google.com/">
                 <span class="badge"><i class="fa-solid fa-robot" /></span>
                 <span class="flex-auto">{color.label} Item</span>
@@ -434,7 +434,7 @@
       <nav>
         <ul class="menu-nav">
           {#each colors as color}
-            <li class="menu-item-interactive menu-item-yorha {color.yorha}">
+            <li class="menu-nav-item-interactive menu-item-yorha {color.yorha}">
               <a class="menu-nav-item-a-wrapper" href="https://www.google.com/">
                 <span class="badge"><i class="fa-solid fa-robot" /></span>
                 <span class="flex-auto">{color.label} Item</span>
@@ -465,9 +465,9 @@
             <span class="flex-auto">Item {i + 1}</span>
           </li>
         {/each}
-        <li>
-          <details>
-            <summary class="menu-submenu-summary menu-submenu-summary-standard">Submenu</summary>
+        <li class="menu-submenu-li-wrapper">
+          <details class="menu-submenu-details-wrapper">
+            <summary class="menu-submenu-summary">Submenu</summary>
             <ul class="menu menu-submenu-list border-primary-950-50-token">
               {#each Array.from(Array(3)) as _, i}
                 <li class="menu-item-interactive menu-item-standard bt-primary-950-50-token">
@@ -479,6 +479,27 @@
                   </div>
                 </li>
               {/each}
+              <li class="menu-submenu-li-wrapper">
+                <details class="menu-submenu-details-wrapper">
+                  <summary class="menu-submenu-summary">Submenu</summary>
+                  <ul class="menu menu-submenu-list border-primary-950-50-token">
+                    {#each Array.from(Array(3)) as _, i}
+                      <li class="menu-item-interactive menu-item-standard bt-primary-950-50-token">
+                        <div
+                          class="menu-submenu-item-click-wrapper"
+                          on:click={() => {}}
+                          on:keypress
+                        >
+                          <span class="badge-icon">
+                            <i class="fa-solid fa-robot" />
+                          </span>
+                          <span class="flex-auto">Item {i + 1}</span>
+                        </div>
+                      </li>
+                    {/each}
+                  </ul>
+                </details>
+              </li>
             </ul>
           </details>
         </li>
@@ -499,9 +520,9 @@
             <span class="flex-auto">Item {i + 1}</span>
           </li>
         {/each}
-        <li>
-          <details>
-            <summary class="menu-submenu-summary menu-submenu-summary-standard">Submenu</summary>
+        <li class="menu-submenu-li-wrapper">
+          <details class="menu-submenu-details-wrapper">
+            <summary class="menu-submenu-summary">Submenu</summary>
             <ol class="menu menu-submenu-list border-primary-950-50-token">
               {#each Array.from(Array(3)) as _, i}
                 <li class="menu-item-interactive menu-item-standard bt-primary-950-50-token">
@@ -511,6 +532,25 @@
                   </div>
                 </li>
               {/each}
+              <li class="menu-submenu-li-wrapper">
+                <details class="menu-submenu-details-wrapper">
+                  <summary class="menu-submenu-summary">Submenu</summary>
+                  <ol class="menu menu-submenu-list border-primary-950-50-token">
+                    {#each Array.from(Array(3)) as _, i}
+                      <li class="menu-item-interactive menu-item-standard bt-primary-950-50-token">
+                        <div
+                          class="menu-submenu-item-click-wrapper"
+                          on:click={() => {}}
+                          on:keypress
+                        >
+                          <span class="badge-icon">{i + 1}</span>
+                          <span class="flex-auto">Item {i + 1}</span>
+                        </div>
+                      </li>
+                    {/each}
+                  </ol>
+                </details>
+              </li>
             </ol>
           </details>
         </li>
@@ -534,9 +574,9 @@
             </span>
           </div>
         {/each}
-        <div>
-          <details>
-            <summary class="menu-submenu-summary menu-submenu-summary-standard">Submenu</summary>
+        <div class="menu-submenu-li-wrapper">
+          <details class="menu-submenu-details-wrapper">
+            <summary class="menu-submenu-summary">Submenu</summary>
             <dl class="menu-dl menu-submenu-list border-primary-950-50-token">
               {#each Array.from(Array(3)) as _, i}
                 <div class="menu-dl-item-interactive menu-item-standard bt-primary-950-50-token">
@@ -549,6 +589,30 @@
                   </div>
                 </div>
               {/each}
+              <div class="menu-submenu-li-wrapper">
+                <details class="menu-submenu-details-wrapper">
+                  <summary class="menu-submenu-summary">Submenu</summary>
+                  <dl class="menu-dl menu-submenu-list border-primary-950-50-token">
+                    {#each Array.from(Array(3)) as _, i}
+                      <div
+                        class="menu-dl-item-interactive menu-item-standard bt-primary-950-50-token"
+                      >
+                        <div
+                          class="menu-submenu-item-click-wrapper"
+                          on:click={() => {}}
+                          on:keypress
+                        >
+                          <span class="badge"><i class="fa-solid fa-robot" /></span>
+                          <span class="flex-auto">
+                            <dt>Title {i + 1}</dt>
+                            <dd>Description {i + 1}</dd>
+                          </span>
+                        </div>
+                      </div>
+                    {/each}
+                  </dl>
+                </details>
+              </div>
             </dl>
           </details>
         </div>
@@ -561,25 +625,42 @@
       <nav>
         <ul class="menu-nav">
           {#each Array.from(Array(3)) as _, i}
-            <li class="menu-item-interactive menu-item-standard bt-primary-950-50-token">
+            <li class="menu-nav-item-interactive menu-item-standard bt-primary-950-50-token">
               <a class="menu-nav-item-a-wrapper" href="https://www.google.com/">
                 <span class="badge"><i class="fa-solid fa-robot" /></span>
                 <span class="flex-auto">Item {i + 1}</span>
               </a>
             </li>
           {/each}
-          <li>
-            <details>
-              <summary class="menu-submenu-summary menu-submenu-summary-standard">Submenu</summary>
+          <li class="menu-submenu-li-wrapper">
+            <details class="menu-submenu-details-wrapper">
+              <summary class="menu-submenu-summary">Submenu</summary>
               <ul class="menu-nav menu-submenu-list border-primary-950-50-token">
                 {#each Array.from(Array(3)) as _, i}
-                  <li class="menu-item-interactive menu-item-standard bt-primary-950-50-token">
+                  <li class="menu-nav-item-interactive menu-item-standard bt-primary-950-50-token">
                     <a class="menu-nav-item-a-wrapper" href="https://www.google.com/">
                       <span class="badge"><i class="fa-solid fa-robot" /></span>
                       <span class="flex-auto">Item {i + 1}</span>
                     </a>
                   </li>
                 {/each}
+                <li class="menu-submenu-li-wrapper">
+                  <details class="menu-submenu-details-wrapper">
+                    <summary class="menu-submenu-summary">Submenu</summary>
+                    <ul class="menu-nav menu-submenu-list border-primary-950-50-token">
+                      {#each Array.from(Array(3)) as _, i}
+                        <li
+                          class="menu-nav-item-interactive menu-item-standard bt-primary-950-50-token"
+                        >
+                          <a class="menu-nav-item-a-wrapper" href="https://www.google.com/">
+                            <span class="badge"><i class="fa-solid fa-robot" /></span>
+                            <span class="flex-auto">Item {i + 1}</span>
+                          </a>
+                        </li>
+                      {/each}
+                    </ul>
+                  </details>
+                </li>
               </ul>
             </details>
           </li>
@@ -647,7 +728,7 @@
       <nav>
         <ul class="menu-nav">
           <li
-            class="menu-item-interactive menu-item-standard menu-item-disabled bt-primary-950-50-token"
+            class="menu-nav-item-interactive menu-item-standard menu-item-disabled bt-primary-950-50-token"
           >
             <a class="menu-nav-item-a-wrapper" href="https://www.google.com/">
               <span class="badge"><i class="fa-solid fa-robot" /></span>
