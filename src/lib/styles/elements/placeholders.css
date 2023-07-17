@@ -1,0 +1,23 @@
+/* Stylesheet: placeholders.css */
+
+@layer components {
+  /* ----- Placeholder ----- */
+
+  .placeholder {
+    @apply rounded-base;
+  }
+
+  .placeholder-rounded {
+    @apply rounded-full;
+  }
+
+  /* ----- Variants ----- */
+
+  .placeholder-icon {
+    @apply aspect-square rounded-base;
+  }
+
+  .placeholder-icon-circle {
+    @apply aspect-square rounded-full;
+  }
+}
