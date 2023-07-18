@@ -1,7 +1,7 @@
 /* Stylesheet: placeholders.css */
 
 @layer components {
-  /* ----- Placeholder ----- */
+  /* ----- Placeholders ----- */
 
   .placeholder {
     @apply rounded-base;
@@ -11,7 +11,7 @@
     @apply rounded-full;
   }
 
-  /* ----- Variants ----- */
+  /* ----- Icon Placeholders ----- */
 
   .placeholder-icon {
     @apply aspect-square rounded-base;
