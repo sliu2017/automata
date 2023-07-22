@@ -1,0 +1,73 @@
+/* Stylesheet: tables.css */
+
+@layer components {
+  /* ----- Table ----- */
+  .table-container {
+    /* Width */
+    @apply w-full;
+    /* Overflow */
+    @apply overflow-x-auto;
+    /* Borders */
+    @apply rounded-container border-container outline-container outline-offset-container ring-container ring-offset-container border-container-token outline-container-token;
+  }
+
+  .table {
+    /* Width */
+    @apply w-full;
+    /* Overflow */
+    @apply overflow-hidden;
+    /* Borders */
+    @apply rounded-container border-container outline-container outline-offset-container ring-container ring-offset-container border-container-token outline-container-token;
+    /* Table Layout */
+    @apply table-auto;
+  }
+
+  /* ----- Table Head ----- */
+  .table-thead {
+    /* Border */
+    @apply border-b;
+  }
+
+  /* ----- Table Cells ----- */
+  .table-th,
+  .table-td {
+    /* Typography */
+    @apply text-left;
+    /* Padding */
+    @apply p-2;
+  }
+
+  /* ----- Options ----- */
+
+  /* Cells Comfortable */
+  .table-th-comfortable,
+  .table-td-comfortable {
+    @apply !py-3;
+  }
+
+  /* Cells Compact */
+  .table-th-compact,
+  .table-td-compact {
+    @apply !py-1;
+  }
+
+  /* Row Dividers */
+  .table-row-divider {
+    /* Border */
+    @apply border-b;
+  }
+
+  /* Fit Width */
+  .table-cell-fit {
+    @apply w-[1%] whitespace-nowrap;
+  }
+
+  /* Sorting */
+  .table-sort-asc {
+    @apply after:px-2 after:opacity-50 after:!content-['↑'];
+  }
+
+  .table-sort-dsc {
+    @apply after:px-2 after:opacity-50 after:!content-['↓'];
+  }
+}
